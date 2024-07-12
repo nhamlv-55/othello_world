@@ -6,6 +6,13 @@ from torch.nn import functional as F
 from matplotlib import pyplot as plt
 
 from data.othello import permit, start_hands, OthelloBoardState, permit_reverse
+from data import get_othello
+from mingpt.dataset import CharDataset
+from mingpt.probe_model import BatteryProbeClassification, BatteryProbeClassificationTwoLayer
+from mingpt.model import GPT, GPTConfig, GPTforProbeIA
+from typing import List
+import pickle
+from tqdm import tqdm
 
 def set_seed(seed):
     random.seed(seed)
@@ -105,3 +112,74 @@ def intervene(p, mid_act, labels_pre_intv, wtd, htd, plot=False):
             print_board(labels_post_intv) 
     
     return new_mid_act
+
+def get_probe(device: torch.device)->nn.Module:
+    championship = False
+    mid_dim = 256
+    how_many_history_step_to_use = 99
+    exp = f"state_tl{mid_dim}"
+    if championship:
+        exp += "_championship"
+
+    layer = 8
+    probe = BatteryProbeClassificationTwoLayer(device, probe_class=3, num_task=64, mid_dim=mid_dim)
+    load_res = probe.load_state_dict(torch.load(f"./ckpts/battery_othello/{exp}/layer{layer}/checkpoint.ckpt", map_location=device))
+    probe.eval()
+    return probe
+
+def get_OthelloGPT(probe_layer: int, device: torch.device)->nn.Module:
+    mconf = GPTConfig(61, 59, n_layer=8, n_head=8, n_embd=512)
+
+    model = GPTforProbeIA(mconf, probe_layer=probe_layer)#, disable_last_layer_norm = True
+    load_res = model.load_state_dict(torch.load("./ckpts/gpt_synthetic.ckpt", map_location=device))
+
+    model.eval()
+    return model
+
+
+
+
+def gen_dataset(device: torch.device, save_location: str)->List[int]:
+    """
+    This function will extract case_id where the probe predicts the correct board
+    """
+    #load all games
+    with open("intervention_benchmark.pkl", "rb") as input_file:
+        DATASET = pickle.load(input_file)
+
+    othello = get_othello(ood_perc=0., data_root=None, wthor=False, ood_num=1)
+    CHARSET = CharDataset(othello)
+    
+    #this is where we keep the `good` games    
+    dataset = []
+    gpt_model = get_OthelloGPT(8, device)
+    probe = get_probe(device)
+
+    for idx, game in tqdm(enumerate(DATASET)):
+        completion = game['history']
+        partial_game = torch.tensor([CHARSET.stoi[s] for s in completion], dtype=torch.long).to(device)
+        partial_game = partial_game[None, :]
+        h = gpt_model.forward_1st_stage(partial_game)
+        #h = query_in.unsqueeze(0).unsqueeze(0)
+        print(h.shape)
+        reconstructed_board, _ = probe((h)[0][-1])
+        reconstructed_board = torch.argmax(reconstructed_board.squeeze(), dim = -1).reshape(64).tolist()
+
+        board = OthelloBoardState()
+        board.update(completion)
+        true_board = board.get_state()
+
+        if true_board == reconstructed_board:
+            game['h'] = h
+            game['game_idx'] = idx
+            game['true_board'] = true_board
+            game['true_valid_moves'] = board.get_valid_moves()
+            dataset.append(game)
+    
+    with open(save_location, "wb") as f:
+        pickle.dump(dataset, f, protocol=pickle.HIGHEST_PROTOCOL)       
+    return dataset
+
+
+       
+
