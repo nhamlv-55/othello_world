@@ -1,0 +1,1429 @@
+InputQuery: /home/levn/Workspace/othello_world/queries/probe_robust/group_4/game_44_target_12_eps_0.1.txt
+Engine::processInputQuery: Input query (before preprocessing): 449 equations, 1216 variables
+Engine::processInputQuery: Input query (after preprocessing): 705 equations, 1354 variables
+
+Input bounds:
+	x0: [ -2.1481,  -1.9481] 
+	x1: [ -1.0062,  -0.8062] 
+	x2: [  0.2820,   0.4820] 
+	x3: [  0.4871,   0.6871] 
+	x4: [  1.4592,   1.6592] 
+	x5: [ -3.3002,  -3.1002] 
+	x6: [ -0.7801,  -0.5801] 
+	x7: [  1.8670,   2.0670] 
+	x8: [  0.4912,   0.6912] 
+	x9: [  0.0211,   0.2211] 
+	x10: [  0.4459,   0.6459] 
+	x11: [ -0.8201,  -0.6201] 
+	x12: [ -1.8675,  -1.6675] 
+	x13: [ -1.6627,  -1.4627] 
+	x14: [  0.4852,   0.6852] 
+	x15: [  2.0996,   2.2996] 
+	x16: [  0.3777,   0.5777] 
+	x17: [ -0.6473,  -0.4473] 
+	x18: [  0.2386,   0.4386] 
+	x19: [  0.9749,   1.1749] 
+	x20: [ -1.1388,  -0.9388] 
+	x21: [  2.3152,   2.5152] 
+	x22: [ -1.6431,  -1.4431] 
+	x23: [  2.5790,   2.7790] 
+	x24: [ -1.8704,  -1.6704] 
+	x25: [  2.2458,   2.4458] 
+	x26: [  0.7660,   0.9660] 
+	x27: [  0.3603,   0.5603] 
+	x28: [  1.3707,   1.5707] 
+	x29: [  1.6249,   1.8249] 
+	x30: [ -4.5396,  -4.3396] 
+	x31: [  1.3906,   1.5906] 
+	x32: [ -1.1978,  -0.9978] 
+	x33: [  0.5307,   0.7307] 
+	x34: [ -0.1124,   0.0876] 
+	x35: [ -0.5696,  -0.3696] 
+	x36: [  0.2797,   0.4797] 
+	x37: [ -1.2144,  -1.0144] 
+	x38: [ -1.6875,  -1.4875] 
+	x39: [ -0.8580,  -0.6580] 
+	x40: [ -0.3570,  -0.1570] 
+	x41: [  0.5630,   0.7630] 
+	x42: [ -0.4005,  -0.2005] 
+	x43: [  0.6873,   0.8873] 
+	x44: [ -2.8761,  -2.6761] 
+	x45: [  1.1593,   1.3593] 
+	x46: [  0.6949,   0.8949] 
+	x47: [ -0.5922,  -0.3922] 
+	x48: [ -3.3512,  -3.1512] 
+	x49: [  2.2590,   2.4590] 
+	x50: [ -0.7014,  -0.5014] 
+	x51: [  3.0159,   3.2159] 
+	x52: [  1.6550,   1.8550] 
+	x53: [ -0.1924,   0.0076] 
+	x54: [  0.8789,   1.0789] 
+	x55: [ -1.7814,  -1.5814] 
+	x56: [ -0.3217,  -0.1217] 
+	x57: [ -2.0506,  -1.8506] 
+	x58: [  0.5418,   0.7418] 
+	x59: [ -0.4619,  -0.2619] 
+	x60: [ -1.6907,  -1.4907] 
+	x61: [ -1.7174,  -1.5174] 
+	x62: [ -3.7474,  -3.5474] 
+	x63: [  1.4419,   1.6419] 
+	x64: [ -0.6032,  -0.4032] 
+	x65: [ -0.2652,  -0.0652] 
+	x66: [ -2.8119,  -2.6119] 
+	x67: [ -0.7348,  -0.5348] 
+	x68: [ -0.4723,  -0.2723] 
+	x69: [  0.3131,   0.5131] 
+	x70: [ -2.1644,  -1.9644] 
+	x71: [  0.0477,   0.2477] 
+	x72: [  4.2454,   4.4454] 
+	x73: [  2.1196,   2.3196] 
+	x74: [ -1.0258,  -0.8258] 
+	x75: [ -2.1588,  -1.9588] 
+	x76: [ -2.2775,  -2.0775] 
+	x77: [  0.1292,   0.3292] 
+	x78: [  0.5964,   0.7964] 
+	x79: [ -1.0363,  -0.8363] 
+	x80: [  0.6011,   0.8011] 
+	x81: [  0.6732,   0.8732] 
+	x82: [  1.3298,   1.5298] 
+	x83: [ -0.1236,   0.0764] 
+	x84: [  2.1941,   2.3941] 
+	x85: [ -0.1998,   0.0002] 
+	x86: [ -0.5770,  -0.3770] 
+	x87: [ -3.1519,  -2.9519] 
+	x88: [ -1.5247,  -1.3247] 
+	x89: [ -0.3504,  -0.1504] 
+	x90: [ -1.2802,  -1.0802] 
+	x91: [ -1.2964,  -1.0964] 
+	x92: [  1.1376,   1.3376] 
+	x93: [  1.5117,   1.7117] 
+	x94: [ -1.4252,  -1.2252] 
+	x95: [  2.5536,   2.7536] 
+	x96: [ -0.3883,  -0.1883] 
+	x97: [  1.5956,   1.7956] 
+	x98: [  1.7833,   1.9833] 
+	x99: [ -0.3307,  -0.1307] 
+	x100: [ -0.1787,   0.0213] 
+	x101: [  0.2418,   0.4418] 
+	x102: [  0.6312,   0.8312] 
+	x103: [  0.4026,   0.6026] 
+	x104: [ -0.4242,  -0.2242] 
+	x105: [ -0.1454,   0.0546] 
+	x106: [ -0.2086,  -0.0086] 
+	x107: [ -1.2911,  -1.0911] 
+	x108: [  0.3012,   0.5012] 
+	x109: [ -2.8451,  -2.6451] 
+	x110: [ -2.3730,  -2.1730] 
+	x111: [ -0.0388,   0.1612] 
+	x112: [ -1.1831,  -0.9831] 
+	x113: [  0.9612,   1.1612] 
+	x114: [  0.2747,   0.4747] 
+	x115: [ -0.2720,  -0.0720] 
+	x116: [ -0.4647,  -0.2647] 
+	x117: [ -0.9727,  -0.7727] 
+	x118: [ -0.7567,  -0.5567] 
+	x119: [ -0.7344,  -0.5344] 
+	x120: [ -0.7763,  -0.5763] 
+	x121: [  2.6747,   2.8747] 
+	x122: [  0.2153,   0.4153] 
+	x123: [ -0.7346,  -0.5346] 
+	x124: [ -1.2899,  -1.0899] 
+	x125: [ -1.2489,  -1.0489] 
+	x126: [ -1.7097,  -1.5097] 
+	x127: [  0.2017,   0.4017] 
+	x128: [  0.3140,   0.5140] 
+	x129: [  1.5559,   1.7559] 
+	x130: [  0.1998,   0.3998] 
+	x131: [ -1.9988,  -1.7988] 
+	x132: [  1.7168,   1.9168] 
+	x133: [ -2.1089,  -1.9089] 
+	x134: [ -1.0561,  -0.8561] 
+	x135: [ -1.5141,  -1.3141] 
+	x136: [ -0.0431,   0.1569] 
+	x137: [  1.6888,   1.8888] 
+	x138: [  1.3981,   1.5981] 
+	x139: [ -0.7777,  -0.5777] 
+	x140: [ -2.2873,  -2.0873] 
+	x141: [ -0.1041,   0.0959] 
+	x142: [  0.6812,   0.8812] 
+	x143: [ -0.8566,  -0.6566] 
+	x144: [ -2.6486,  -2.4486] 
+	x145: [  1.5850,   1.7850] 
+	x146: [ -0.9256,  -0.7256] 
+	x147: [ -1.1130,  -0.9130] 
+	x148: [  0.6698,   0.8698] 
+	x149: [ -1.0406,  -0.8406] 
+	x150: [ -1.5707,  -1.3707] 
+	x151: [  2.2116,   2.4116] 
+	x152: [ -0.1984,   0.0016] 
+	x153: [ -2.6851,  -2.4851] 
+	x154: [ -3.3282,  -3.1282] 
+	x155: [  1.7571,   1.9571] 
+	x156: [ -2.5635,  -2.3635] 
+	x157: [  1.6459,   1.8459] 
+	x158: [  1.5577,   1.7577] 
+	x159: [ -0.0525,   0.1475] 
+	x160: [  0.0214,   0.2214] 
+	x161: [ -1.5635,  -1.3635] 
+	x162: [ -0.6245,  -0.4245] 
+	x163: [ -0.6188,  -0.4188] 
+	x164: [ -0.8795,  -0.6795] 
+	x165: [ -2.0308,  -1.8308] 
+	x166: [ -1.1499,  -0.9499] 
+	x167: [  2.3513,   2.5513] 
+	x168: [ -0.7891,  -0.5891] 
+	x169: [  0.3452,   0.5452] 
+	x170: [ -0.0368,   0.1632] 
+	x171: [ -0.3610,  -0.1610] 
+	x172: [ -2.8585,  -2.6585] 
+	x173: [  2.6897,   2.8897] 
+	x174: [ -1.4931,  -1.2931] 
+	x175: [  0.7083,   0.9083] 
+	x176: [ -2.0819,  -1.8819] 
+	x177: [ -0.5528,  -0.3528] 
+	x178: [  0.2165,   0.4165] 
+	x179: [ -0.3676,  -0.1676] 
+	x180: [  0.0414,   0.2414] 
+	x181: [  2.1885,   2.3885] 
+	x182: [ -0.5954,  -0.3954] 
+	x183: [  1.2735,   1.4735] 
+	x184: [ -0.2471,  -0.0471] 
+	x185: [ -2.0728,  -1.8728] 
+	x186: [  1.0159,   1.2159] 
+	x187: [ -1.1135,  -0.9135] 
+	x188: [ -0.0948,   0.1052] 
+	x189: [  0.6712,   0.8712] 
+	x190: [  1.6373,   1.8373] 
+	x191: [ -3.1071,  -2.9071] 
+	x192: [ -1.5411,  -1.3411] 
+	x193: [ -1.4617,  -1.2617] 
+	x194: [  0.1210,   0.3210] 
+	x195: [ -0.2020,  -0.0020] 
+	x196: [  0.3759,   0.5759] 
+	x197: [ -0.3987,  -0.1987] 
+	x198: [ -0.6977,  -0.4977] 
+	x199: [ -1.1461,  -0.9461] 
+	x200: [ -0.1470,   0.0530] 
+	x201: [ -0.4073,  -0.2073] 
+	x202: [ -0.9850,  -0.7850] 
+	x203: [ -2.3747,  -2.1747] 
+	x204: [ -4.2817,  -4.0817] 
+	x205: [  1.1694,   1.3694] 
+	x206: [ -0.7829,  -0.5829] 
+	x207: [ -2.4482,  -2.2482] 
+	x208: [  0.5387,   0.7387] 
+	x209: [  1.0397,   1.2397] 
+	x210: [ -1.2497,  -1.0497] 
+	x211: [ -1.4816,  -1.2816] 
+	x212: [  0.9227,   1.1227] 
+	x213: [  1.1440,   1.3440] 
+	x214: [ -0.9238,  -0.7238] 
+	x215: [ -0.3132,  -0.1132] 
+	x216: [ -0.5632,  -0.3632] 
+	x217: [  0.9886,   1.1886] 
+	x218: [  2.0898,   2.2898] 
+	x219: [ -2.0983,  -1.8983] 
+	x220: [ -1.8822,  -1.6822] 
+	x221: [ -1.5509,  -1.3509] 
+	x222: [ -0.4440,  -0.2440] 
+	x223: [  1.7786,   1.9786] 
+	x224: [ -0.6108,  -0.4108] 
+	x225: [ -1.2878,  -1.0878] 
+	x226: [ -1.0965,  -0.8965] 
+	x227: [ -2.7505,  -2.5505] 
+	x228: [ -0.6604,  -0.4604] 
+	x229: [ -1.4455,  -1.2455] 
+	x230: [  0.8906,   1.0906] 
+	x231: [ -0.9870,  -0.7870] 
+	x232: [  2.5819,   2.7819] 
+	x233: [ -0.8095,  -0.6095] 
+	x234: [  0.2893,   0.4893] 
+	x235: [  1.8419,   2.0419] 
+	x236: [ -1.5682,  -1.3682] 
+	x237: [ -1.1812,  -0.9812] 
+	x238: [  1.8279,   2.0279] 
+	x239: [  2.4611,   2.6611] 
+	x240: [  1.0216,   1.2216] 
+	x241: [ -1.5042,  -1.3042] 
+	x242: [ -2.6280,  -2.4280] 
+	x243: [  0.4801,   0.6801] 
+	x244: [ -1.8627,  -1.6627] 
+	x245: [ -0.3163,  -0.1163] 
+	x246: [ -1.2642,  -1.0642] 
+	x247: [ -0.1715,   0.0285] 
+	x248: [  0.2612,   0.4612] 
+	x249: [ -1.2381,  -1.0381] 
+	x250: [  1.6944,   1.8944] 
+	x251: [ -1.2899,  -1.0899] 
+	x252: [  1.9769,   2.1769] 
+	x253: [ -0.0915,   0.1085] 
+	x254: [ -2.2895,  -2.0895] 
+	x255: [ -1.9356,  -1.7356] 
+	x256: [  2.6954,   2.8954] 
+	x257: [ -0.7328,  -0.5328] 
+	x258: [  1.2152,   1.4152] 
+	x259: [ -1.6626,  -1.4626] 
+	x260: [ -0.2496,  -0.0496] 
+	x261: [ -1.0638,  -0.8638] 
+	x262: [  1.8461,   2.0461] 
+	x263: [ -0.1875,   0.0125] 
+	x264: [ -1.1409,  -0.9409] 
+	x265: [ -2.5697,  -2.3697] 
+	x266: [ -1.2814,  -1.0814] 
+	x267: [  0.8830,   1.0830] 
+	x268: [ -1.7270,  -1.5270] 
+	x269: [  1.1960,   1.3960] 
+	x270: [  2.3665,   2.5665] 
+	x271: [  0.0601,   0.2601] 
+	x272: [ -2.5212,  -2.3212] 
+	x273: [ -0.9544,  -0.7544] 
+	x274: [  1.0855,   1.2855] 
+	x275: [  2.1041,   2.3041] 
+	x276: [ -3.3660,  -3.1660] 
+	x277: [ -1.3311,  -1.1311] 
+	x278: [ -2.4293,  -2.2293] 
+	x279: [  2.8876,   3.0876] 
+	x280: [ -0.7970,  -0.5970] 
+	x281: [  0.8010,   1.0010] 
+	x282: [ -0.2817,  -0.0817] 
+	x283: [  1.7846,   1.9846] 
+	x284: [ -0.8673,  -0.6673] 
+	x285: [ -1.3386,  -1.1386] 
+	x286: [ -1.3415,  -1.1415] 
+	x287: [  0.4699,   0.6699] 
+	x288: [  0.2889,   0.4889] 
+	x289: [  1.0254,   1.2254] 
+	x290: [  0.2236,   0.4236] 
+	x291: [  2.8182,   3.0182] 
+	x292: [ -2.4183,  -2.2183] 
+	x293: [  0.3698,   0.5698] 
+	x294: [ -2.9619,  -2.7619] 
+	x295: [ -0.9433,  -0.7433] 
+	x296: [ -2.0239,  -1.8239] 
+	x297: [  1.9131,   2.1131] 
+	x298: [ -4.7847,  -4.5847] 
+	x299: [ -0.8115,  -0.6115] 
+	x300: [ -0.8493,  -0.6493] 
+	x301: [  1.1464,   1.3464] 
+	x302: [  1.7012,   1.9012] 
+	x303: [  1.0545,   1.2545] 
+	x304: [ -1.5697,  -1.3697] 
+	x305: [  0.7355,   0.9355] 
+	x306: [ -0.5993,  -0.3993] 
+	x307: [ -1.1084,  -0.9084] 
+	x308: [  4.0898,   4.2898] 
+	x309: [ -0.1293,   0.0707] 
+	x310: [  1.0721,   1.2721] 
+	x311: [ -1.0843,  -0.8843] 
+	x312: [ -1.6940,  -1.4940] 
+	x313: [  0.2990,   0.4990] 
+	x314: [ -0.3181,  -0.1181] 
+	x315: [  0.4976,   0.6976] 
+	x316: [ -0.8054,  -0.6054] 
+	x317: [  1.0112,   1.2112] 
+	x318: [ -0.3234,  -0.1234] 
+	x319: [  0.3591,   0.5591] 
+	x320: [ -1.1290,  -0.9290] 
+	x321: [  1.7398,   1.9398] 
+	x322: [ -1.6940,  -1.4940] 
+	x323: [  1.7796,   1.9796] 
+	x324: [ -0.4988,  -0.2988] 
+	x325: [ -0.3565,  -0.1565] 
+	x326: [  1.1997,   1.3997] 
+	x327: [  1.7676,   1.9676] 
+	x328: [  1.3091,   1.5091] 
+	x329: [  1.1205,   1.3205] 
+	x330: [ -1.2593,  -1.0593] 
+	x331: [ -2.2178,  -2.0178] 
+	x332: [  2.6562,   2.8562] 
+	x333: [  2.2237,   2.4237] 
+	x334: [ -0.9189,  -0.7189] 
+	x335: [  0.1515,   0.3515] 
+	x336: [  1.2543,   1.4543] 
+	x337: [ -0.6283,  -0.4283] 
+	x338: [ -1.9407,  -1.7407] 
+	x339: [  2.1268,   2.3268] 
+	x340: [ -3.5442,  -3.3442] 
+	x341: [  2.3512,   2.5512] 
+	x342: [  0.1636,   0.3636] 
+	x343: [ -0.9638,  -0.7638] 
+	x344: [ -1.1979,  -0.9979] 
+	x345: [ -0.6837,  -0.4837] 
+	x346: [ -0.2504,  -0.0504] 
+	x347: [  0.0370,   0.2370] 
+	x348: [  1.4400,   1.6400] 
+	x349: [  3.8646,   4.0646] 
+	x350: [ -0.9681,  -0.7681] 
+	x351: [  1.5053,   1.7053] 
+	x352: [ -0.4712,  -0.2712] 
+	x353: [ -0.2415,  -0.0415] 
+	x354: [ -1.5220,  -1.3220] 
+	x355: [  0.6225,   0.8225] 
+	x356: [ -0.6859,  -0.4859] 
+	x357: [  2.8066,   3.0066] 
+	x358: [ -0.7975,  -0.5975] 
+	x359: [ -3.3540,  -3.1540] 
+	x360: [ -2.7440,  -2.5440] 
+	x361: [  2.8098,   3.0098] 
+	x362: [  0.6163,   0.8163] 
+	x363: [ -0.0770,   0.1230] 
+	x364: [ -1.0311,  -0.8311] 
+	x365: [ -0.2449,  -0.0449] 
+	x366: [  0.5797,   0.7797] 
+	x367: [ -0.6920,  -0.4920] 
+	x368: [ -0.8206,  -0.6206] 
+	x369: [ -0.6969,  -0.4969] 
+	x370: [  1.2439,   1.4439] 
+	x371: [ -1.6901,  -1.4901] 
+	x372: [ -2.7196,  -2.5196] 
+	x373: [ -0.0924,   0.1076] 
+	x374: [ -2.1639,  -1.9639] 
+	x375: [ -1.8205,  -1.6205] 
+	x376: [  1.8590,   2.0590] 
+	x377: [  0.4546,   0.6546] 
+	x378: [  1.4624,   1.6624] 
+	x379: [ -2.2348,  -2.0348] 
+	x380: [  0.9325,   1.1325] 
+	x381: [ -3.7025,  -3.5025] 
+	x382: [ -0.9842,  -0.7842] 
+	x383: [  2.4016,   2.6016] 
+	x384: [  0.9190,   1.1190] 
+	x385: [  0.1891,   0.3891] 
+	x386: [  0.8970,   1.0970] 
+	x387: [  1.7879,   1.9879] 
+	x388: [ -1.5532,  -1.3532] 
+	x389: [ -1.5574,  -1.3574] 
+	x390: [  0.1479,   0.3479] 
+	x391: [ -1.8723,  -1.6723] 
+	x392: [  1.4291,   1.6291] 
+	x393: [  1.7012,   1.9012] 
+	x394: [  0.0182,   0.2182] 
+	x395: [  0.2435,   0.4435] 
+	x396: [ -1.1230,  -0.9230] 
+	x397: [ -3.8054,  -3.6054] 
+	x398: [ -0.3469,  -0.1469] 
+	x399: [ -0.2681,  -0.0681] 
+	x400: [ -2.8427,  -2.6427] 
+	x401: [  0.4607,   0.6607] 
+	x402: [  0.2822,   0.4822] 
+	x403: [ -1.2838,  -1.0838] 
+	x404: [  0.0757,   0.2757] 
+	x405: [ -1.7291,  -1.5291] 
+	x406: [  1.5626,   1.7626] 
+	x407: [  1.0533,   1.2533] 
+	x408: [ -0.9291,  -0.7291] 
+	x409: [ -0.9859,  -0.7859] 
+	x410: [  2.0755,   2.2755] 
+	x411: [ -2.4446,  -2.2446] 
+	x412: [  0.7892,   0.9892] 
+	x413: [  0.6450,   0.8450] 
+	x414: [ -0.0062,   0.1938] 
+	x415: [  1.4416,   1.6416] 
+	x416: [  1.4323,   1.6323] 
+	x417: [ -1.7169,  -1.5169] 
+	x418: [  0.9133,   1.1133] 
+	x419: [  0.6363,   0.8363] 
+	x420: [  0.4122,   0.6122] 
+	x421: [ -0.9229,  -0.7229] 
+	x422: [ -1.5206,  -1.3206] 
+	x423: [  0.8054,   1.0054] 
+	x424: [ -0.0414,   0.1586] 
+	x425: [ -0.4927,  -0.2927] 
+	x426: [ -3.0471,  -2.8471] 
+	x427: [  0.4263,   0.6263] 
+	x428: [  2.9011,   3.1011] 
+	x429: [  2.9615,   3.1615] 
+	x430: [ -0.6978,  -0.4978] 
+	x431: [  1.9745,   2.1745] 
+	x432: [ -0.6570,  -0.4570] 
+	x433: [ -0.4177,  -0.2177] 
+	x434: [  1.5774,   1.7774] 
+	x435: [ -0.2277,  -0.0277] 
+	x436: [ -1.4292,  -1.2292] 
+	x437: [ -1.8534,  -1.6534] 
+	x438: [  2.8094,   3.0094] 
+	x439: [ -1.0256,  -0.8256] 
+	x440: [  0.0153,   0.2153] 
+	x441: [  0.1402,   0.3402] 
+	x442: [ -0.1758,   0.0242] 
+	x443: [ -3.0899,  -2.8899] 
+	x444: [  1.7627,   1.9627] 
+	x445: [  1.3175,   1.5175] 
+	x446: [ -0.1042,   0.0958] 
+	x447: [ -0.0624,   0.1376] 
+	x448: [ -1.4651,  -1.2651] 
+	x449: [  0.2592,   0.4592] 
+	x450: [  0.6678,   0.8678] 
+	x451: [ -0.0176,   0.1824] 
+	x452: [ -0.1214,   0.0786] 
+	x453: [  1.1562,   1.3562] 
+	x454: [  2.3203,   2.5203] 
+	x455: [ -0.0076,   0.1924] 
+	x456: [ -0.2711,  -0.0711] 
+	x457: [  0.0679,   0.2679] 
+	x458: [ -1.0831,  -0.8831] 
+	x459: [ -1.6143,  -1.4143] 
+	x460: [  2.7549,   2.9549] 
+	x461: [  2.7358,   2.9358] 
+	x462: [  0.4401,   0.6401] 
+	x463: [ -1.4183,  -1.2183] 
+	x464: [  0.5627,   0.7627] 
+	x465: [ -0.2798,  -0.0798] 
+	x466: [  1.1042,   1.3042] 
+	x467: [ -3.4777,  -3.2777] 
+	x468: [ -1.1986,  -0.9986] 
+	x469: [ -0.4836,  -0.2836] 
+	x470: [ -1.5870,  -1.3870] 
+	x471: [ -1.3730,  -1.1730] 
+	x472: [ -0.7840,  -0.5840] 
+	x473: [  0.4820,   0.6820] 
+	x474: [ -2.2174,  -2.0174] 
+	x475: [  0.7050,   0.9050] 
+	x476: [ -0.3160,  -0.1160] 
+	x477: [  1.6830,   1.8830] 
+	x478: [  2.4606,   2.6606] 
+	x479: [  4.3151,   4.5151] 
+	x480: [ -2.2703,  -2.0703] 
+	x481: [ -1.0953,  -0.8953] 
+	x482: [ -0.2672,  -0.0672] 
+	x483: [  1.6348,   1.8348] 
+	x484: [  1.1675,   1.3675] 
+	x485: [  2.1416,   2.3416] 
+	x486: [  1.7088,   1.9088] 
+	x487: [ -0.4976,  -0.2976] 
+	x488: [ -0.7332,  -0.5332] 
+	x489: [  1.7611,   1.9611] 
+	x490: [ -0.3667,  -0.1667] 
+	x491: [  0.1417,   0.3417] 
+	x492: [  0.9032,   1.1032] 
+	x493: [ -1.0824,  -0.8824] 
+	x494: [  1.1399,   1.3399] 
+	x495: [ -1.3935,  -1.1935] 
+	x496: [ -0.2796,  -0.0796] 
+	x497: [ -1.1626,  -0.9626] 
+	x498: [  0.3387,   0.5387] 
+	x499: [ -0.8652,  -0.6652] 
+	x500: [  1.4896,   1.6896] 
+	x501: [  1.4815,   1.6815] 
+	x502: [  0.4224,   0.6224] 
+	x503: [ -1.6290,  -1.4290] 
+	x504: [  0.7308,   0.9308] 
+	x505: [ -0.7863,  -0.5863] 
+	x506: [  0.5707,   0.7707] 
+	x507: [ -0.3442,  -0.1442] 
+	x508: [  0.1883,   0.3883] 
+	x509: [ -1.5955,  -1.3955] 
+	x510: [ -0.4113,  -0.2113] 
+	x511: [ -0.8784,  -0.6784] 
+
+Branching heuristics set to PseudoImpact
+
+Engine::solve: Initial statistics
+
+23:57:08 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 498 milli (00:00:00)
+		Main loop: 0 milli (00:00:00)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 298 milli (00:00:00)
+	Breakdown for main loop:
+		[0.00%] Simplex steps: 0 milli
+		[0.00%] Explicit-basis bound tightening: 0 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.00%] Degradation checking: 0 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.00%] Statistics handling: 0 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 0 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 0 milli
+		[0.00%] SMT core: 0 milli
+		[0.00%] Symbolic Bound Tightening: 12 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 1
+		0 iterations were simplex steps. Total time: 0 milli. Average: 0.00 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 137 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 0
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000000000. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 0
+		Real pivots: 0. Degenerate: 0 (0.00%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.00 milli
+	Total number of fake pivots performed: 0
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 0. Total visited states: 1. Number of splits: 0. Number of pops: 0
+	Max stack depth: 0
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 0.
+		Number of rows examined by row tightener: 0. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 0. Consequent tightenings: 0
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 822. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 2
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 0.
+	Number of resets to reference space: 1. Avg. iterations per reset: 0
+	--- SBT ---
+	Number of tightened bounds: 385
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 0. Number of accepted update: 0 [0.00%]
+	Total time (% of local search time) updating SoI phase pattern : 0 milli [0.00%]
+	Total time obtaining current assignment: 0 milli [0.00%]
+	Total time getting SoI phase pattern : 0 milli [0.00%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 0 / 0
+		[0.00%] Pre-Push hook: 0 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.00%] Total context-switching time: 0 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+---
+
+23:57:29 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 21752 milli (00:00:21)
+		Main loop: 21089 milli (00:00:21)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 462 milli (00:00:00)
+	Breakdown for main loop:
+		[63.87%] Simplex steps: 13470 milli
+		[30.42%] Explicit-basis bound tightening: 6415 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.96%] Degradation checking: 202 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.05%] Statistics handling: 9 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 0 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 0 milli
+		[0.17%] SMT core: 35 milli
+		[3.39%] Symbolic Bound Tightening: 715 milli
+		[46.90%] SoI-based local search: 9890 milli
+		[0.00%] SoI-based local search: 0 milli
+		[1.14%] Unaccounted for: 239 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 10000
+		9848 iterations were simplex steps. Total time: 13470 milli. Average: 1.37 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 90 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 47
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000280883. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 8648
+		Real pivots: 8644. Degenerate: 4 (0.05%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.29 milli
+	Total number of fake pivots performed: 337
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 47. Total visited states: 87. Number of splits: 66. Number of pops: 20
+	Max stack depth: 57
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 16498.
+		Number of rows examined by row tightener: 8648. Consequent tightenings: 13
+		Number of explicit basis matrices examined by row tightener: 28. Consequent tightenings: 537
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 1994. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 76
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 8985.
+	Number of resets to reference space: 27. Avg. iterations per reset: 332
+	--- SBT ---
+	Number of tightened bounds: 16883
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 365. Number of accepted update: 299 [81.92%]
+	Total time (% of local search time) updating SoI phase pattern : 23848 milli [0.24%]
+	Total time obtaining current assignment: 86926 milli [0.88%]
+	Total time getting SoI phase pattern : 14274 milli [0.07%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 86 / 39
+		[0.04%] Pre-Push hook: 8 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 1 milli
+		[0.00%] Pop : 0 milli
+		[0.05%] Total context-switching time: 10 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+23:58:00 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 52052 milli (00:00:52)
+		Main loop: 51550 milli (00:00:51)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 301 milli (00:00:00)
+	Breakdown for main loop:
+		[53.08%] Simplex steps: 27364 milli
+		[40.42%] Explicit-basis bound tightening: 20837 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.77%] Degradation checking: 399 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 19 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 1 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 1 milli
+		[0.18%] SMT core: 93 milli
+		[2.59%] Symbolic Bound Tightening: 1337 milli
+		[30.19%] SoI-based local search: 15565 milli
+		[0.00%] SoI-based local search: 0 milli
+		[2.90%] Unaccounted for: 1496 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 20000
+		19751 iterations were simplex steps. Total time: 27364 milli. Average: 1.39 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 93 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 44
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000898377. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 17735
+		Real pivots: 17719. Degenerate: 16 (0.09%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.31 milli
+	Total number of fake pivots performed: 572
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 44. Total visited states: 162. Number of splits: 102. Number of pops: 59
+	Max stack depth: 57
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 30299.
+		Number of rows examined by row tightener: 17735. Consequent tightenings: 412
+		Number of explicit basis matrices examined by row tightener: 90. Consequent tightenings: 1856
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 3376. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 157
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 18307.
+	Number of resets to reference space: 70. Avg. iterations per reset: 261
+	--- SBT ---
+	Number of tightened bounds: 30684
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 607. Number of accepted update: 505 [83.20%]
+	Total time (% of local search time) updating SoI phase pattern : 37415 milli [0.24%]
+	Total time obtaining current assignment: 149787 milli [0.96%]
+	Total time getting SoI phase pattern : 21743 milli [0.04%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 161 / 117
+		[0.02%] Pre-Push hook: 11 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 4 milli
+		[0.01%] Pop : 3 milli
+		[0.04%] Total context-switching time: 19 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+23:58:26 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 78420 milli (00:01:18)
+		Main loop: 77807 milli (00:01:17)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 413 milli (00:00:00)
+	Breakdown for main loop:
+		[52.56%] Simplex steps: 40898 milli
+		[40.56%] Explicit-basis bound tightening: 31561 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.77%] Degradation checking: 595 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 29 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 2 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 1 milli
+		[0.20%] SMT core: 154 milli
+		[2.67%] Symbolic Bound Tightening: 2073 milli
+		[28.32%] SoI-based local search: 22035 milli
+		[0.00%] SoI-based local search: 0 milli
+		[3.20%] Unaccounted for: 2488 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 30000
+		29629 iterations were simplex steps. Total time: 40898 milli. Average: 1.38 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 84 / 137
+		Constraints disabled by valid splits: 1. By SMT-originated splits: 52
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000898377. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 26617
+		Real pivots: 26596. Degenerate: 21 (0.08%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.31 milli
+	Total number of fake pivots performed: 855
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 52. Total visited states: 254. Number of splits: 151. Number of pops: 102
+	Max stack depth: 58
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 46537.
+		Number of rows examined by row tightener: 26617. Consequent tightenings: 644
+		Number of explicit basis matrices examined by row tightener: 137. Consequent tightenings: 3102
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 4512. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 235
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 27472.
+	Number of resets to reference space: 117. Avg. iterations per reset: 234
+	--- SBT ---
+	Number of tightened bounds: 46922
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 892. Number of accepted update: 741 [83.07%]
+	Total time (% of local search time) updating SoI phase pattern : 56040 milli [0.25%]
+	Total time obtaining current assignment: 224369 milli [1.02%]
+	Total time getting SoI phase pattern : 30836 milli [0.04%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 253 / 201
+		[0.02%] Pre-Push hook: 15 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 7 milli
+		[0.01%] Pop : 5 milli
+		[0.04%] Total context-switching time: 29 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+23:58:56 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 108063 milli (00:01:48)
+		Main loop: 107556 milli (00:01:47)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 307 milli (00:00:00)
+	Breakdown for main loop:
+		[50.94%] Simplex steps: 54788 milli
+		[41.66%] Explicit-basis bound tightening: 44811 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.75%] Degradation checking: 801 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 40 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 3 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 2 milli
+		[0.20%] SMT core: 218 milli
+		[2.55%] Symbolic Bound Tightening: 2740 milli
+		[25.15%] SoI-based local search: 27046 milli
+		[0.00%] SoI-based local search: 0 milli
+		[3.86%] Unaccounted for: 4150 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 40000
+		39523 iterations were simplex steps. Total time: 54788 milli. Average: 1.39 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 94 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 43
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000898377. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 35779
+		Real pivots: 35745. Degenerate: 34 (0.10%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 1126
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 43. Total visited states: 336. Number of splits: 188. Number of pops: 147
+	Max stack depth: 58
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 61634.
+		Number of rows examined by row tightener: 35779. Consequent tightenings: 1041
+		Number of explicit basis matrices examined by row tightener: 196. Consequent tightenings: 4218
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 5840. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 317
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 36905.
+	Number of resets to reference space: 163. Avg. iterations per reset: 226
+	--- SBT ---
+	Number of tightened bounds: 62019
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 1071. Number of accepted update: 883 [82.45%]
+	Total time (% of local search time) updating SoI phase pattern : 70582 milli [0.26%]
+	Total time obtaining current assignment: 275972 milli [1.02%]
+	Total time getting SoI phase pattern : 36657 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 335 / 292
+		[0.02%] Pre-Push hook: 18 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 11 milli
+		[0.01%] Pop : 8 milli
+		[0.04%] Total context-switching time: 38 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+23:59:26 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 138575 milli (00:02:18)
+		Main loop: 138065 milli (00:02:18)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 310 milli (00:00:00)
+	Breakdown for main loop:
+		[49.43%] Simplex steps: 68248 milli
+		[42.73%] Explicit-basis bound tightening: 58996 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.72%] Degradation checking: 998 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 50 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 4 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 2 milli
+		[0.21%] SMT core: 285 milli
+		[2.54%] Symbolic Bound Tightening: 3511 milli
+		[23.63%] SoI-based local search: 32627 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.32%] Unaccounted for: 5966 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 50000
+		49407 iterations were simplex steps. Total time: 68248 milli. Average: 1.38 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 91 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 46
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 44594
+		Real pivots: 44559. Degenerate: 35 (0.08%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 1471
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 46. Total visited states: 431. Number of splits: 237. Number of pops: 193
+	Max stack depth: 58
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 79618.
+		Number of rows examined by row tightener: 44594. Consequent tightenings: 1593
+		Number of explicit basis matrices examined by row tightener: 260. Consequent tightenings: 7158
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 8086. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 395
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 46065.
+	Number of resets to reference space: 211. Avg. iterations per reset: 218
+	--- SBT ---
+	Number of tightened bounds: 80003
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 1356. Number of accepted update: 1119 [82.52%]
+	Total time (% of local search time) updating SoI phase pattern : 88974 milli [0.27%]
+	Total time obtaining current assignment: 352457 milli [1.08%]
+	Total time getting SoI phase pattern : 45535 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 430 / 384
+		[0.02%] Pre-Push hook: 22 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 14 milli
+		[0.01%] Pop : 11 milli
+		[0.03%] Total context-switching time: 48 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+23:59:55 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 167035 milli (00:02:47)
+		Main loop: 166441 milli (00:02:46)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 393 milli (00:00:00)
+	Breakdown for main loop:
+		[49.22%] Simplex steps: 81927 milli
+		[42.97%] Explicit-basis bound tightening: 71524 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.72%] Degradation checking: 1193 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 60 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 5 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 3 milli
+		[0.20%] SMT core: 340 milli
+		[2.50%] Symbolic Bound Tightening: 4160 milli
+		[22.95%] SoI-based local search: 38205 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.34%] Unaccounted for: 7224 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 60000
+		59317 iterations were simplex steps. Total time: 81927 milli. Average: 1.38 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 88 / 137
+		Constraints disabled by valid splits: 1. By SMT-originated splits: 48
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 53596
+		Real pivots: 53561. Degenerate: 35 (0.07%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 1713
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 48. Total visited states: 509. Number of splits: 277. Number of pops: 231
+	Max stack depth: 58
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 93979.
+		Number of rows examined by row tightener: 53596. Consequent tightenings: 1795
+		Number of explicit basis matrices examined by row tightener: 315. Consequent tightenings: 8291
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 9229. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 476
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 55309.
+	Number of resets to reference space: 251. Avg. iterations per reset: 220
+	--- SBT ---
+	Number of tightened bounds: 94364
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 1618. Number of accepted update: 1341 [82.88%]
+	Total time (% of local search time) updating SoI phase pattern : 104300 milli [0.27%]
+	Total time obtaining current assignment: 421782 milli [1.10%]
+	Total time getting SoI phase pattern : 54005 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 508 / 460
+		[0.02%] Pre-Push hook: 25 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 16 milli
+		[0.01%] Pop : 14 milli
+		[0.03%] Total context-switching time: 56 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+00:00:23 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 195368 milli (00:03:15)
+		Main loop: 194770 milli (00:03:14)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 398 milli (00:00:00)
+	Breakdown for main loop:
+		[49.14%] Simplex steps: 95712 milli
+		[43.30%] Explicit-basis bound tightening: 84334 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.71%] Degradation checking: 1390 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 70 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 6 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 3 milli
+		[0.20%] SMT core: 393 milli
+		[2.44%] Symbolic Bound Tightening: 4752 milli
+		[22.73%] SoI-based local search: 44274 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.16%] Unaccounted for: 8107 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 70000
+		69230 iterations were simplex steps. Total time: 95712 milli. Average: 1.38 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 89 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 48
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 62604
+		Real pivots: 62563. Degenerate: 41 (0.07%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 1925
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 48. Total visited states: 582. Number of splits: 314. Number of pops: 267
+	Max stack depth: 58
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 107854.
+		Number of rows examined by row tightener: 62604. Consequent tightenings: 3027
+		Number of explicit basis matrices examined by row tightener: 369. Consequent tightenings: 9216
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 10816. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 557
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 64529.
+	Number of resets to reference space: 290. Avg. iterations per reset: 222
+	--- SBT ---
+	Number of tightened bounds: 108239
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 1898. Number of accepted update: 1582 [83.35%]
+	Total time (% of local search time) updating SoI phase pattern : 119255 milli [0.27%]
+	Total time obtaining current assignment: 491388 milli [1.11%]
+	Total time getting SoI phase pattern : 62735 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 581 / 533
+		[0.01%] Pre-Push hook: 28 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 18 milli
+		[0.01%] Pop : 16 milli
+		[0.03%] Total context-switching time: 64 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+00:00:48 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 219847 milli (00:03:39)
+		Main loop: 219330 milli (00:03:39)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 317 milli (00:00:00)
+	Breakdown for main loop:
+		[49.94%] Simplex steps: 109541 milli
+		[42.23%] Explicit-basis bound tightening: 92633 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.72%] Degradation checking: 1586 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 80 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 6 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 4 milli
+		[0.22%] SMT core: 472 milli
+		[2.57%] Symbolic Bound Tightening: 5647 milli
+		[23.95%] SoI-based local search: 52529 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.27%] Unaccounted for: 9357 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 80000
+		79071 iterations were simplex steps. Total time: 109541 milli. Average: 1.39 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 87 / 137
+		Constraints disabled by valid splits: 1. By SMT-originated splits: 49
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 71316
+		Real pivots: 71268. Degenerate: 48 (0.07%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 2140
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 49. Total visited states: 693. Number of splits: 369. Number of pops: 323
+	Max stack depth: 58
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 130292.
+		Number of rows examined by row tightener: 71316. Consequent tightenings: 3908
+		Number of explicit basis matrices examined by row tightener: 406. Consequent tightenings: 9948
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 12146. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 633
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 73456.
+	Number of resets to reference space: 353. Avg. iterations per reset: 208
+	--- SBT ---
+	Number of tightened bounds: 130677
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 2293. Number of accepted update: 1923 [83.86%]
+	Total time (% of local search time) updating SoI phase pattern : 139909 milli [0.27%]
+	Total time obtaining current assignment: 593961 milli [1.13%]
+	Total time getting SoI phase pattern : 74335 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 692 / 643
+		[0.01%] Pre-Push hook: 32 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 23 milli
+		[0.01%] Pop : 19 milli
+		[0.03%] Total context-switching time: 75 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+00:01:14 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 246508 milli (00:04:06)
+		Main loop: 245988 milli (00:04:05)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 320 milli (00:00:00)
+	Breakdown for main loop:
+		[50.13%] Simplex steps: 123322 milli
+		[42.25%] Explicit-basis bound tightening: 103934 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.72%] Degradation checking: 1783 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 90 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 7 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 4 milli
+		[0.22%] SMT core: 533 milli
+		[2.57%] Symbolic Bound Tightening: 6327 milli
+		[23.76%] SoI-based local search: 58454 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.06%] Unaccounted for: 9982 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 90000
+		88957 iterations were simplex steps. Total time: 123322 milli. Average: 1.39 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 88 / 137
+		Constraints disabled by valid splits: 2. By SMT-originated splits: 47
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 80268
+		Real pivots: 80215. Degenerate: 53 (0.07%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 2486
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 47. Total visited states: 777. Number of splits: 410. Number of pops: 366
+	Max stack depth: 59
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 146642.
+		Number of rows examined by row tightener: 80268. Consequent tightenings: 5184
+		Number of explicit basis matrices examined by row tightener: 453. Consequent tightenings: 11493
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 14113. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 713
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 82754.
+	Number of resets to reference space: 401. Avg. iterations per reset: 206
+	--- SBT ---
+	Number of tightened bounds: 147027
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 2523. Number of accepted update: 2112 [83.71%]
+	Total time (% of local search time) updating SoI phase pattern : 157495 milli [0.27%]
+	Total time obtaining current assignment: 655413 milli [1.12%]
+	Total time getting SoI phase pattern : 81598 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 776 / 729
+		[0.01%] Pre-Push hook: 35 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 26 milli
+		[0.01%] Pop : 21 milli
+		[0.03%] Total context-switching time: 84 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+00:01:46 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 278525 milli (00:04:38)
+		Main loop: 277959 milli (00:04:37)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 366 milli (00:00:00)
+	Breakdown for main loop:
+		[49.16%] Simplex steps: 136638 milli
+		[43.08%] Explicit-basis bound tightening: 119742 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.71%] Degradation checking: 1980 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 101 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 8 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 5 milli
+		[0.21%] SMT core: 592 milli
+		[2.48%] Symbolic Bound Tightening: 6887 milli
+		[22.44%] SoI-based local search: 62361 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.32%] Unaccounted for: 12002 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 100000
+		98882 iterations were simplex steps. Total time: 136638 milli. Average: 1.38 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 101 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 36
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 89269
+		Real pivots: 89205. Degenerate: 64 (0.07%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 2853
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 36. Total visited states: 848. Number of splits: 441. Number of pops: 406
+	Max stack depth: 59
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 158013.
+		Number of rows examined by row tightener: 89269. Consequent tightenings: 7541
+		Number of explicit basis matrices examined by row tightener: 524. Consequent tightenings: 13319
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 16596. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 792
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 92122.
+	Number of resets to reference space: 442. Avg. iterations per reset: 208
+	--- SBT ---
+	Number of tightened bounds: 158398
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 2742. Number of accepted update: 2300 [83.88%]
+	Total time (% of local search time) updating SoI phase pattern : 170181 milli [0.27%]
+	Total time obtaining current assignment: 709861 milli [1.14%]
+	Total time getting SoI phase pattern : 88769 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 847 / 811
+		[0.01%] Pre-Push hook: 38 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 28 milli
+		[0.01%] Pop : 25 milli
+		[0.03%] Total context-switching time: 92 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+
+Engine: quitting due to timeout...
+
+Final statistics:
+
+00:02:09 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 301228 milli (00:05:01)
+		Main loop: 300702 milli (00:05:00)
+		Preprocessing time: 199 milli (00:00:00)
+		Unknown: 325 milli (00:00:00)
+	Breakdown for main loop:
+		[48.86%] Simplex steps: 146925 milli
+		[43.36%] Explicit-basis bound tightening: 130380 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.71%] Degradation checking: 2136 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.04%] Statistics handling: 108 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 9 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 5 milli
+		[0.21%] SMT core: 632 milli
+		[2.46%] Symbolic Bound Tightening: 7388 milli
+		[22.32%] SoI-based local search: 67119 milli
+		[0.00%] SoI-based local search: 0 milli
+		[4.36%] Unaccounted for: 13115 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 119
+	Number of constraints removed due to variable elimination: 119
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 108021
+		106827 iterations were simplex steps. Total time: 146925 milli. Average: 1.38 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 91 / 137
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 46
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0015827573. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 96261
+		Real pivots: 96193. Degenerate: 68 (0.07%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.32 milli
+	Total number of fake pivots performed: 3184
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 705, N = 2059
+	--- SMT Core Statistics ---
+	Total depth is 46. Total visited states: 910. Number of splits: 476. Number of pops: 433
+	Max stack depth: 59
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 169475.
+		Number of rows examined by row tightener: 96261. Consequent tightenings: 7846
+		Number of explicit basis matrices examined by row tightener: 571. Consequent tightenings: 15833
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 18602. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 852
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 99445.
+	Number of resets to reference space: 472. Avg. iterations per reset: 210
+	--- SBT ---
+	Number of tightened bounds: 169860
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 2999. Number of accepted update: 2522 [84.09%]
+	Total time (% of local search time) updating SoI phase pattern : 182596 milli [0.27%]
+	Total time obtaining current assignment: 772505 milli [1.15%]
+	Total time getting SoI phase pattern : 97127 milli [0.03%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 909 / 863
+		[0.01%] Pre-Push hook: 40 milli
+		[0.00%] Push : 0 milli
+		[0.01%] Post-Pop hook: 30 milli
+		[0.01%] Pop : 26 milli
+		[0.03%] Total context-switching time: 98 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+Timeout

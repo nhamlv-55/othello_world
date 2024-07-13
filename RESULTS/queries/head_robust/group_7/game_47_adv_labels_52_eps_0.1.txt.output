@@ -1,0 +1,3 @@
+InputQuery: /home/levn/Workspace/othello_world/queries/head_robust/group_7/game_47_adv_labels_52_eps_0.1.txt
+Engine::processInputQuery: Input query (before preprocessing): 62 equations, 573 variables
+unsat
