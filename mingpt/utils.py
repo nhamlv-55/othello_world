@@ -13,6 +13,22 @@ from mingpt.model import GPT, GPTConfig, GPTforProbeIA
 from typing import List
 import pickle
 from tqdm import tqdm
+import logging
+from maraboupy import Marabou
+from maraboupy.MarabouNetwork import MarabouNetwork
+import tempfile
+
+def build_marabou_net(nnet: nn.Module, dummy_input: torch.Tensor):
+    """
+        convert the network to MarabouNetwork
+    """
+    nnet.eval()
+    tempf = tempfile.NamedTemporaryFile(delete=False)
+    torch.onnx.export(nnet, dummy_input, tempf.name, verbose=False)
+
+    marabou_net = Marabou.read_onnx(tempf.name)
+    return marabou_net
+
 
 def set_seed(seed):
     random.seed(seed)
@@ -160,8 +176,18 @@ def gen_dataset(device: torch.device, save_location: str)->List[int]:
         partial_game = torch.tensor([CHARSET.stoi[s] for s in completion], dtype=torch.long).to(device)
         partial_game = partial_game[None, :]
         h = gpt_model.forward_1st_stage(partial_game)
+        output, _ = gpt_model(partial_game)
+        output = output[0][-1].detach().tolist()
+        tmp = gpt_model.head(h)[0][-1].detach().tolist()
+        h_after_lnf = gpt_model.ln_f(h)
+        tmp2 = gpt_model.head(h_after_lnf)[0][-1].detach().tolist()
+        print("-------------------")
+        print(output[:6])
+        print(tmp[:6])
+        print(tmp2[:6])
         #h = query_in.unsqueeze(0).unsqueeze(0)
-        print(h.shape)
+        logging.debug(h.shape)
+        logging.debug(f"true output: {output}")
         reconstructed_board, _ = probe((h)[0][-1])
         reconstructed_board = torch.argmax(reconstructed_board.squeeze(), dim = -1).reshape(64).tolist()
 
@@ -171,9 +197,11 @@ def gen_dataset(device: torch.device, save_location: str)->List[int]:
 
         if true_board == reconstructed_board:
             game['h'] = h
+            game['h_after_lnf'] = h_after_lnf
             game['game_idx'] = idx
             game['true_board'] = true_board
             game['true_valid_moves'] = board.get_valid_moves()
+            game['true_output'] = output
             dataset.append(game)
     
     with open(save_location, "wb") as f:
