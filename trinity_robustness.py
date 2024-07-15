@@ -71,6 +71,9 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
 
             #set input perturbation
             assert h_input.shape == m_probe.inputVars[0].shape
+            input_vars = m_probe.inputVars[0]
+            output_vars = m_probe.outputVars[0][0]
+            print(output_vars)
 
             for i in range(len(h_input)): #should be 0->511
                 m_probe.setLowerBound(input_vars[i], h_input[i] - eps)
@@ -204,6 +207,9 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
                 constraint.addAddend(-1, target_idx)
                 constraint.addAddend(1, adv_idx)
 
+                query.addEquation(constraint.toCoreEquation())
+
+
                 #======DONE with constraints
                 # save query
                 query_name =  f"queries/head_prove_probe_robust/group_{g['game_idx']%8}/game_{g['game_idx']}_target_{target}_eps_{eps}.txt"
@@ -213,4 +219,5 @@ if __name__=="__main__":
     # gen_verify_probe_queries(eps = 0.1, n_games= 100, n_targets=4)
     # gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
 
-    gen_verify_queries(eps = 0.1, n_games=100, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)
+    gen_verify_queries(eps = 0.1, n_games=100, n_targets=4, task=TrinityProperty.PROBE_ROBUST)
+    # gen_verify_queries(eps = 0.05, n_games=100, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)
