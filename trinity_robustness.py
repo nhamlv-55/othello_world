@@ -180,20 +180,12 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
                     m_trinity.setLowerBound(input_vars[i], h_input[i] - eps)
                     m_trinity.setUpperBound(input_vars[i], h_input[i] + eps)
 
-                # make sure that the output of the head is the same
+                # MAKE SURE THAT THE OUTPUT OF THE HEAD IS THE SAME
                 for idx, v in enumerate(g['true_output']):
                     if v < 0:
                         m_trinity.setUpperBound(head_output_vars[idx], 0)
                     else:
                         m_trinity.setLowerBound(head_output_vars[idx], 0)
-
-
-
-
-
-
-
-
 
                 query = m_trinity.getMarabouQuery()
                 #======DONE enforcing that the head output stays the same
@@ -215,9 +207,68 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
                 query_name =  f"queries/head_prove_probe_robust/group_{g['game_idx']%8}/game_{g['game_idx']}_target_{target}_eps_{eps}.txt"
                 MarabouCore.saveQuery(query, query_name)
 
+        elif task==TrinityProperty.PROBE_PROVE_HEAD:
+            #get 4 random target tiles to flip legal into illegal or vice versa
+            targets = random.sample(range(1, 61), n_targets)
+
+            for target in targets:
+                m_trinity = build_marabou_net(TRINITY_MODEL, DUMMY_INPUT)
+                h_input = g['h'][0][-1]
+
+                input_vars = m_trinity.inputVars[0]
+                output_vars = m_trinity.outputVars[0]
+
+                probe_output_vars = output_vars[:64*3].reshape(64,3)
+                head_output_vars = output_vars[64*3:]
+
+                #set input perturbation
+                for i in range(len(h_input)):
+                    m_trinity.setLowerBound(input_vars[i], h_input[i] - eps)
+                    m_trinity.setUpperBound(input_vars[i], h_input[i] + eps)
+
+                #set SAFETY condition
+                #can we make a legal move into illegal or vice versa
+                print(f"flipping target: {target}")
+                if g['true_output'][target] > 0:
+                    m_trinity.setUpperBound(head_output_vars[target], N_ZERO)
+                else:
+                    m_trinity.setLowerBound(head_output_vars[target], P_ZERO)
+
+
+                #get the query
+                query = m_trinity.getMarabouQuery()
+
+                #MAKE SURE THAT THE OUTPUT OF THE PROBE IS THE SAME
+                for idx, tile in enumerate(probe_output_vars): #probe_output_vars: 64*3
+                    print(f"enforcing tile {tile}")
+                    true_argmax = int(g['true_board'][idx])
+                    print(f"true argmax: {true_argmax}")
+                    target_idx = tile[true_argmax]
+                    #the argmax must still be max
+
+                    left_idx = tile[(true_argmax+1)%3]
+                    right_idx = tile[(true_argmax-1)%3]
+
+                    #c1: output[target_idx] > output[left_idx]
+                    c1 = MarabouUtils.Equation(MarabouCore.Equation.GE)
+                    c1.setScalar(P_ZERO)
+                    c1.addAddend(1, target_idx)
+                    c1.addAddend(-1, left_idx)
+                    query.addEquation(c1.toCoreEquation())
+
+                    #c2: output[target_idx] > output[right_idx]
+                    c2 = MarabouUtils.Equation(MarabouCore.Equation.GE)
+                    c2.setScalar(P_ZERO)
+                    c2.addAddend(1, target_idx)
+                    c2.addAddend(-1, right_idx)
+                    query.addEquation(c2.toCoreEquation())
+                
+                query_name =  f"queries/probe_prove_head_robust/group_{g['game_idx']%8}/game_{g['game_idx']}_target_{target}_eps_{eps}.txt"
+                MarabouCore.saveQuery(query, query_name)
+               
 if __name__=="__main__":
     # gen_verify_probe_queries(eps = 0.1, n_games= 100, n_targets=4)
-    # gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
-
-    gen_verify_queries(eps = 0.1, n_games=100, n_targets=4, task=TrinityProperty.PROBE_ROBUST)
-    # gen_verify_queries(eps = 0.05, n_games=100, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)
+    gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
+    gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.PROBE_ROBUST)
+    gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)
+    gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.PROBE_PROVE_HEAD)
