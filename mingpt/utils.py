@@ -139,7 +139,7 @@ def get_probe(device: torch.device)->nn.Module:
 
     layer = 8
     probe = BatteryProbeClassificationTwoLayer(device, probe_class=3, num_task=64, mid_dim=mid_dim)
-    load_res = probe.load_state_dict(torch.load(f"./ckpts/battery_othello/{exp}/layer{layer}/checkpoint.ckpt", map_location=device))
+    load_res = probe.load_state_dict(torch.load(f"./ckpts/battery_othello/{exp}/layer{layer}_lnTrue/checkpoint.ckpt", map_location=device))
     probe.eval()
     return probe
 
@@ -175,16 +175,13 @@ def gen_dataset(device: torch.device, save_location: str)->List[int]:
         completion = game['history']
         partial_game = torch.tensor([CHARSET.stoi[s] for s in completion], dtype=torch.long).to(device)
         partial_game = partial_game[None, :]
-        h = gpt_model.forward_1st_stage(partial_game)
+        h = gpt_model.ln_f(gpt_model.forward_1st_stage(partial_game)) #h should be the hidden value AFTER the layernorm
         output, _ = gpt_model(partial_game)
         output = output[0][-1].detach().tolist()
         tmp = gpt_model.head(h)[0][-1].detach().tolist()
-        h_after_lnf = gpt_model.ln_f(h)
-        tmp2 = gpt_model.head(h_after_lnf)[0][-1].detach().tolist()
         print("-------------------")
         print(output[:6])
         print(tmp[:6])
-        print(tmp2[:6])
         #h = query_in.unsqueeze(0).unsqueeze(0)
         logging.debug(h.shape)
         logging.debug(f"true output: {output}")
@@ -197,7 +194,6 @@ def gen_dataset(device: torch.device, save_location: str)->List[int]:
 
         if true_board == reconstructed_board:
             game['h'] = h
-            game['h_after_lnf'] = h_after_lnf
             game['game_idx'] = idx
             game['true_board'] = true_board
             game['true_valid_moves'] = board.get_valid_moves()

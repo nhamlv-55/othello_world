@@ -20,8 +20,8 @@ white 0, blank 1, black 2
 PROBE = get_probe(device=DEVICE)
 GPT_MODEL: GPTforProbeIA = get_OthelloGPT(probe_layer=8, device=DEVICE)
 
-# GOOD_GAMES = gen_dataset(DEVICE, 'good_games.pkl')
-with open("good_games.pkl", "rb") as f:
+# GOOD_GAMES = gen_dataset(DEVICE, 'good_games_after_layernom.pkl')
+with open("good_games_after_layernom.pkl", "rb") as f:
     GOOD_GAMES = pickle.load(f)
 DUMMY_INPUT = GOOD_GAMES[0]['h'][0][-1] #h shoud be of the shape B * T * 512
 P_ZERO = 10e-6
@@ -107,14 +107,21 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
             output_vars = m_head.outputVars[0]
             print("output vars", output_vars)
             true_prediction = np.array(g['true_output'])
+            true_prediction = true_prediction > 0
+            true_prediction = true_prediction.astype(int).tolist()
+            # true_prediction = true_prediction[1:30] + [-1, -1, -1, -1] + true_prediction[30:]
+            true_prediction = np.array(true_prediction[1:] + [-1, -1, -1, -1]).reshape(8,8)
+            print(true_prediction)
             true_pred_label = np.argmax(true_prediction)
+
             print("true pred label", true_pred_label)
+            print("true valid moves", g['true_valid_moves'])
             adv_labels = set(range(1, 61))
             adv_labels.remove(true_pred_label)
             adv_labels = sorted(adv_labels)
             adv_labels = random.sample(adv_labels, n_targets)
             print("adv_labels:", adv_labels)
-            h_input = g['h_after_lnf'][0][-1].detach().numpy() #h is of the shape B * T * 512. B should always be 1
+            h_input = g['h'][0][-1].detach().numpy() #h is of the shape B * T * 512. B should always be 1
 
             #set input perturbation
             assert h_input.shape == m_head.inputVars[0].shape
@@ -139,4 +146,4 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
 
 if __name__=="__main__":
     # gen_verify_probe_queries(eps = 0.1, n_games= 100, n_targets=4)
-    gen_verify_queries(eps = 0.1, n_games=100, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
+    gen_verify_queries(eps = 0.9, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
