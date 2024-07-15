@@ -74,18 +74,22 @@ othello = get_othello(data_root="data/othello_championship")
 
 train_dataset = CharDataset(othello)
 
+if torch.cuda.is_available():
+
+    device = torch.cuda.current_device()
+else:
+    device = torch.device('cpu')
+
+
 mconf = GPTConfig(train_dataset.vocab_size, train_dataset.block_size, n_layer=8, n_head=8, n_embd=512)
-model = GPTforProbing(mconf, probe_layer=args.layer)
+model = GPTforProbing(mconf, probe_layer=args.layer, ln = True)
+model.to(device)
 if args.random:
     model.apply(model._init_weights)
 elif args.championship:
-    load_res = model.load_state_dict(torch.load("./ckpts/gpt_championship.ckpt"))
+    load_res = model.load_state_dict(torch.load("./ckpts/gpt_championship.ckpt", map_location = device))
 else:  # trained on synthetic dataset
-    load_res = model.load_state_dict(torch.load("./ckpts/gpt_synthetic.ckpt"))
-if torch.cuda.is_available():
-    device = torch.cuda.current_device()
-    model = model.to(device)
-
+    load_res = model.load_state_dict(torch.load("./ckpts/gpt_synthetic.ckpt", map_location = device))
 loader = DataLoader(train_dataset, shuffle=False, pin_memory=True, batch_size=1, num_workers=1)
 act_container = []
 property_container = []
@@ -152,7 +156,7 @@ tconf = TrainerConfig(
     lr_decay=True, warmup_tokens=len(train_dataset)*5, 
     final_tokens=len(train_dataset)*max_epochs,
     num_workers=4, weight_decay=0., 
-    ckpt_path=os.path.join("./ckpts/", folder_name, f"layer{args.layer}")
+    ckpt_path=os.path.join("./ckpts/", folder_name, f"layer{args.layer}_lnTrue")
 )
 trainer = Trainer(probe, train_dataset, test_dataset, tconf)
 trainer.train(prt=True)
