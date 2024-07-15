@@ -143,10 +143,9 @@ def get_probe(device: torch.device)->nn.Module:
     probe.eval()
     return probe
 
-def get_OthelloGPT(probe_layer: int, device: torch.device)->nn.Module:
-    mconf = GPTConfig(61, 59, n_layer=8, n_head=8, n_embd=512)
+def get_OthelloGPT(probe_layer: int, device: torch.device, config: GPTConfig)->nn.Module:
 
-    model = GPTforProbeIA(mconf, probe_layer=probe_layer)#, disable_last_layer_norm = True
+    model = GPTforProbeIA(config=config, probe_layer=probe_layer)#, disable_last_layer_norm = True
     load_res = model.load_state_dict(torch.load("./ckpts/gpt_synthetic.ckpt", map_location=device))
 
     model.eval()

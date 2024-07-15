@@ -4,7 +4,7 @@ import torch.nn as nn
 from tqdm import tqdm
 import torch
 from typing import List, Tuple, Set, Dict, Any
-from mingpt.model import GPT, GPTConfig, GPTforProbeIA
+from mingpt.model import GPT, GPTConfig, GPTforProbeIA, TrinityModel
 from mingpt.probe_model import BatteryProbeClassification, BatteryProbeClassificationTwoLayer
 import logging
 from mingpt.utils import set_seed, get_OthelloGPT, get_probe, gen_dataset, build_marabou_net
@@ -17,9 +17,12 @@ DEVICE = torch.device('cpu')
 """
 white 0, blank 1, black 2
 """
-PROBE = get_probe(device=DEVICE)
-GPT_MODEL: GPTforProbeIA = get_OthelloGPT(probe_layer=8, device=DEVICE)
 
+CONF = GPTConfig(61, 59, n_layer=8, n_head=8, n_embd=512)
+
+PROBE = get_probe(device=DEVICE)
+GPT_MODEL: GPTforProbeIA = get_OthelloGPT(probe_layer=8, device=DEVICE, config=CONF)
+TRINITY_MODEL = TrinityModel(head_model=GPT_MODEL.head, probe_model=PROBE, config=CONF)
 # GOOD_GAMES = gen_dataset(DEVICE, 'good_games_after_layernom.pkl')
 with open("good_games_after_layernom.pkl", "rb") as f:
     GOOD_GAMES = pickle.load(f)
@@ -50,7 +53,7 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
 
     m_head = build_marabou_net(GPT_MODEL.head, DUMMY_INPUT)
 
-
+    m_trinity = build_marabou_net(TRINITY_MODEL, DUMMY_INPUT)
 
     for g in tqdm(GOOD_GAMES[:n_games]):
         input_vars = m_probe.inputVars[0]
@@ -144,6 +147,22 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
 
                 MarabouCore.saveQuery(query, query_name)
 
+        elif task==TrinityProperty.HEAD_PROVE_PROBE:
+            h_input = g['h'][0][-1] #h is of the shape B * T * 512. B should always be 1
+            input_vars = m_trinity.inputVars[0]
+            output_vars = m_trinity.outputVars[0]
+
+            print(input_vars)
+            print(output_vars, output_vars.shape)
+
+            print(GPT_MODEL.head(h_input))
+            print(PROBE(h_input))
+
+            print(">>>>>>>>")
+            print(TRINITY_MODEL(h_input))
+
 if __name__=="__main__":
     # gen_verify_probe_queries(eps = 0.1, n_games= 100, n_targets=4)
-    gen_verify_queries(eps = 0.9, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
+    # gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
+
+    gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)

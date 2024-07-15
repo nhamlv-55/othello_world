@@ -305,3 +305,40 @@ class GPTforProbeIA(GPT):
         if targets is not None:
             loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-100)
         return logits, loss
+    
+
+
+class TrinityModel(nn.Module):
+    def __init__(self, head_model: nn.Module, probe_model: nn.Module, config: GPTConfig):
+        super().__init__()
+        self.head = nn.Linear(config.n_embd, config.vocab_size, bias=False)
+        self.probe = nn.Sequential(
+            nn.Linear(probe_model.input_dim, probe_model.mid_dim, bias=True),
+            nn.ReLU(True),
+            nn.Linear(probe_model.mid_dim, probe_model.probe_class * probe_model.num_task, bias=True),
+        )
+
+        self.init_weight_from_pretrained_model(head_model, probe_model)
+
+    def init_weight_from_pretrained_model(self, head_model, probe_model):
+        #init head
+        self.head.weight.data.copy_(head_model.weight.data)
+        if self.head.bias is not None:
+            self.head.bias.data.copy_(head_model.bias.data)
+
+        #init probe
+        self.probe[0].weight.data.copy_(probe_model.proj[0].weight.data)
+        self.probe[0].bias.data.copy_(probe_model.proj[0].bias.data)
+
+        self.probe[2].weight.data.copy_(probe_model.proj[2].weight.data)
+        self.probe[2].bias.data.copy_(probe_model.proj[2].bias.data)
+
+
+
+    def forward(self, x):
+        print(x.shape)
+        head_out = self.head(x)
+        probe_out = self.probe(x)
+        print(head_out.shape)
+        print(probe_out.shape)
+        return torch.cat((probe_out, head_out), dim = -1)
