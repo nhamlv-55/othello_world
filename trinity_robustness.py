@@ -49,20 +49,16 @@ class TrinityProperty(Enum):
 
 def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityProperty ):
     #reuse the m_probe. only input and output bounds are changed
-    m_probe = build_marabou_net(PROBE, DUMMY_INPUT)
 
-    m_head = build_marabou_net(GPT_MODEL.head, DUMMY_INPUT)
 
-    m_trinity = build_marabou_net(TRINITY_MODEL, DUMMY_INPUT)
 
     for g in tqdm(GOOD_GAMES[:n_games]):
-        input_vars = m_probe.inputVars[0]
-        output_vars = m_probe.outputVars[0][0]
         #set output conditions
         if task==TrinityProperty.PROBE_ROBUST:
             """
             generate the constraints for probe robustness
             """
+            m_probe = build_marabou_net(PROBE, DUMMY_INPUT)
             #get 4 random target tiles to flip
             targets = random.sample(range(64), n_targets)
 
@@ -106,6 +102,8 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
             """
             generate the constrainst for head robustness
             """
+            m_head = build_marabou_net(GPT_MODEL.head, DUMMY_INPUT)
+
             input_vars = m_head.inputVars[0]
             output_vars = m_head.outputVars[0]
             print("output vars", output_vars)
@@ -148,21 +146,71 @@ def gen_verify_queries(eps: float, n_games: int, n_targets: int, task: TrinityPr
                 MarabouCore.saveQuery(query, query_name)
 
         elif task==TrinityProperty.HEAD_PROVE_PROBE:
-            h_input = g['h'][0][-1] #h is of the shape B * T * 512. B should always be 1
-            input_vars = m_trinity.inputVars[0]
-            output_vars = m_trinity.outputVars[0]
+            """
+            We are using the head predicting legal move only.
+            (positive value is legal move. negative value is illegal move)
+            """
+            #get 4 random target tiles to flip
+            targets = random.sample(range(64), n_targets)
 
-            print(input_vars)
-            print(output_vars, output_vars.shape)
+            #for each target
+            for target in targets:
+                #create a new IPQ for each target
+                m_trinity = build_marabou_net(TRINITY_MODEL, DUMMY_INPUT)
+                h_input = g['h'][0][-1] #h is of the shape B * T * 512. B should always be 1
+                input_vars = m_trinity.inputVars[0]
+                output_vars = m_trinity.outputVars[0]
+                probe_output_vars = output_vars[:64*3].reshape(64, 3)
+                head_output_vars = output_vars[64*3:]
+                logging.debug(g['true_board'])
+                logging.debug(input_vars)
+                logging.debug(probe_output_vars)
+                logging.debug(head_output_vars)
 
-            print(GPT_MODEL.head(h_input))
-            print(PROBE(h_input))
+                logging.debug(g['true_output'])
+                logging.debug(g['true_valid_moves'])
+        
+                #set input perturbation
+                assert h_input.shape == m_trinity.inputVars[0].shape
 
-            print(">>>>>>>>")
-            print(TRINITY_MODEL(h_input))
+                for i in range(len(h_input)): #should be 0->511
+                    m_trinity.setLowerBound(input_vars[i], h_input[i] - eps)
+                    m_trinity.setUpperBound(input_vars[i], h_input[i] + eps)
+
+                # make sure that the output of the head is the same
+                for idx, v in enumerate(g['true_output']):
+                    if v < 0:
+                        m_trinity.setUpperBound(head_output_vars[idx], 0)
+                    else:
+                        m_trinity.setLowerBound(head_output_vars[idx], 0)
+
+
+
+
+
+
+
+
+
+                query = m_trinity.getMarabouQuery()
+                #======DONE enforcing that the head output stays the same
+                # start setting probe constraints
+                true_argmax = int(g['true_board'][target])
+                target_idx = probe_output_vars[target][true_argmax]
+                adv_idx = probe_output_vars[target][(true_argmax+1)%3]
+                print(f"target_idx: {target_idx}")
+                constraint = MarabouUtils.Equation(MarabouCore.Equation.GE)
+                constraint.setScalar(P_ZERO)
+                constraint.addAddend(-1, target_idx)
+                constraint.addAddend(1, adv_idx)
+
+                #======DONE with constraints
+                # save query
+                query_name =  f"queries/head_prove_probe_robust/group_{g['game_idx']%8}/game_{g['game_idx']}_target_{target}_eps_{eps}.txt"
+                MarabouCore.saveQuery(query, query_name)
 
 if __name__=="__main__":
     # gen_verify_probe_queries(eps = 0.1, n_games= 100, n_targets=4)
     # gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_ROBUST)
 
-    gen_verify_queries(eps = 0.05, n_games=1, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)
+    gen_verify_queries(eps = 0.1, n_games=100, n_targets=4, task=TrinityProperty.HEAD_PROVE_PROBE)
