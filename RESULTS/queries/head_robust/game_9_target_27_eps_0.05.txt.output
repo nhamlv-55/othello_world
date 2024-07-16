@@ -1,0 +1,3 @@
+InputQuery: /home/levn/Workspace/othello_world/queries/head_robust/game_9_target_27_eps_0.05.txt
+Engine::processInputQuery: Input query (before preprocessing): 61 equations, 573 variables
+unsat

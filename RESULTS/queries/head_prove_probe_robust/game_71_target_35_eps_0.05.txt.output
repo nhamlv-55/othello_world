@@ -1,0 +1,754 @@
+InputQuery: /home/levn/Workspace/othello_world/queries/head_prove_probe_robust/game_71_target_35_eps_0.05.txt
+Engine::processInputQuery: Input query (before preprocessing): 510 equations, 1277 variables
+Engine::processInputQuery: Input query (after preprocessing): 766 equations, 1354 variables
+
+Input bounds:
+	x0: [ -0.9046,  -0.8046] 
+	x1: [ -1.8883,  -1.7883] 
+	x2: [  0.6897,   0.7897] 
+	x3: [  0.9338,   1.0338] 
+	x4: [ -0.4876,  -0.3876] 
+	x5: [  1.1042,   1.2042] 
+	x6: [  0.0745,   0.1745] 
+	x7: [  1.4677,   1.5677] 
+	x8: [ -0.4530,  -0.3530] 
+	x9: [  1.6009,   1.7009] 
+	x10: [  2.8039,   2.9039] 
+	x11: [ -0.4770,  -0.3770] 
+	x12: [ -3.7528,  -3.6528] 
+	x13: [ -2.9315,  -2.8315] 
+	x14: [  2.5649,   2.6649] 
+	x15: [ -1.0802,  -0.9802] 
+	x16: [  0.0667,   0.1667] 
+	x17: [ -0.3850,  -0.2850] 
+	x18: [  1.3985,   1.4985] 
+	x19: [  2.7428,   2.8428] 
+	x20: [  2.0162,   2.1162] 
+	x21: [ -0.3737,  -0.2737] 
+	x22: [ -2.9321,  -2.8321] 
+	x23: [ -0.7483,  -0.6483] 
+	x24: [  1.5812,   1.6812] 
+	x25: [ -1.1286,  -1.0286] 
+	x26: [  1.3991,   1.4991] 
+	x27: [  0.8060,   0.9060] 
+	x28: [ -0.5698,  -0.4698] 
+	x29: [  0.7871,   0.8871] 
+	x30: [  2.0831,   2.1831] 
+	x31: [ -0.4308,  -0.3308] 
+	x32: [ -4.7147,  -4.6147] 
+	x33: [ -0.7678,  -0.6678] 
+	x34: [ -2.0392,  -1.9392] 
+	x35: [  0.5507,   0.6507] 
+	x36: [  2.3449,   2.4449] 
+	x37: [ -3.9195,  -3.8195] 
+	x38: [ -2.9975,  -2.8975] 
+	x39: [ -2.1937,  -2.0937] 
+	x40: [  2.2786,   2.3786] 
+	x41: [ -0.0560,   0.0440] 
+	x42: [  1.3398,   1.4398] 
+	x43: [  0.4620,   0.5620] 
+	x44: [  0.7084,   0.8084] 
+	x45: [ -1.8512,  -1.7512] 
+	x46: [ -0.6452,  -0.5452] 
+	x47: [  0.0753,   0.1753] 
+	x48: [  1.3672,   1.4672] 
+	x49: [ -1.5854,  -1.4854] 
+	x50: [  0.0825,   0.1825] 
+	x51: [ -0.7418,  -0.6418] 
+	x52: [ -0.5404,  -0.4404] 
+	x53: [ -0.5007,  -0.4007] 
+	x54: [  4.2380,   4.3380] 
+	x55: [  1.6898,   1.7898] 
+	x56: [ -2.9249,  -2.8249] 
+	x57: [ -0.3450,  -0.2450] 
+	x58: [  1.0831,   1.1831] 
+	x59: [ -0.1016,  -0.0016] 
+	x60: [  1.0985,   1.1985] 
+	x61: [  3.2887,   3.3887] 
+	x62: [ -0.0253,   0.0747] 
+	x63: [ -0.9201,  -0.8201] 
+	x64: [  0.6741,   0.7741] 
+	x65: [ -1.6026,  -1.5026] 
+	x66: [ -2.2956,  -2.1956] 
+	x67: [ -2.7024,  -2.6024] 
+	x68: [  2.5589,   2.6589] 
+	x69: [  1.2634,   1.3634] 
+	x70: [  1.6571,   1.7571] 
+	x71: [ -0.2817,  -0.1817] 
+	x72: [ -3.7560,  -3.6560] 
+	x73: [ -1.5858,  -1.4858] 
+	x74: [  0.8088,   0.9088] 
+	x75: [ -1.6686,  -1.5686] 
+	x76: [ -4.7006,  -4.6006] 
+	x77: [ -0.5895,  -0.4895] 
+	x78: [ -0.8197,  -0.7197] 
+	x79: [ -0.7372,  -0.6372] 
+	x80: [ -0.8338,  -0.7338] 
+	x81: [ -1.1363,  -1.0363] 
+	x82: [ -1.3111,  -1.2111] 
+	x83: [ -1.0459,  -0.9459] 
+	x84: [ -0.3179,  -0.2179] 
+	x85: [ -1.1188,  -1.0188] 
+	x86: [  1.1767,   1.2767] 
+	x87: [  0.5296,   0.6296] 
+	x88: [ -1.2424,  -1.1424] 
+	x89: [  1.0694,   1.1694] 
+	x90: [  0.7850,   0.8850] 
+	x91: [ -0.3844,  -0.2844] 
+	x92: [ -3.5147,  -3.4147] 
+	x93: [  0.1272,   0.2272] 
+	x94: [  0.7711,   0.8711] 
+	x95: [  1.7597,   1.8597] 
+	x96: [  0.2871,   0.3871] 
+	x97: [  0.9421,   1.0421] 
+	x98: [ -2.8169,  -2.7169] 
+	x99: [ -1.0047,  -0.9047] 
+	x100: [  0.4187,   0.5187] 
+	x101: [  1.6746,   1.7746] 
+	x102: [  0.4678,   0.5678] 
+	x103: [  0.4968,   0.5968] 
+	x104: [ -0.0153,   0.0847] 
+	x105: [  1.1151,   1.2151] 
+	x106: [ -0.5791,  -0.4791] 
+	x107: [  0.2734,   0.3734] 
+	x108: [  0.0208,   0.1208] 
+	x109: [ -0.4541,  -0.3541] 
+	x110: [ -1.7705,  -1.6705] 
+	x111: [ -1.4293,  -1.3293] 
+	x112: [ -1.0252,  -0.9252] 
+	x113: [  0.5697,   0.6697] 
+	x114: [ -1.1430,  -1.0430] 
+	x115: [ -1.6453,  -1.5453] 
+	x116: [  0.6083,   0.7083] 
+	x117: [ -0.3001,  -0.2001] 
+	x118: [ -1.2212,  -1.1212] 
+	x119: [  1.1896,   1.2896] 
+	x120: [  0.2967,   0.3967] 
+	x121: [  0.0424,   0.1424] 
+	x122: [  1.3758,   1.4758] 
+	x123: [  1.0439,   1.1439] 
+	x124: [  0.5791,   0.6791] 
+	x125: [  0.0896,   0.1896] 
+	x126: [  1.6377,   1.7377] 
+	x127: [  1.2361,   1.3361] 
+	x128: [ -1.2848,  -1.1848] 
+	x129: [  1.3915,   1.4915] 
+	x130: [  2.9337,   3.0337] 
+	x131: [  1.3624,   1.4624] 
+	x132: [ -2.1366,  -2.0366] 
+	x133: [  3.5072,   3.6072] 
+	x134: [  5.2261,   5.3261] 
+	x135: [ -0.1611,  -0.0611] 
+	x136: [ -1.4571,  -1.3571] 
+	x137: [  1.4094,   1.5094] 
+	x138: [ -1.7917,  -1.6917] 
+	x139: [ -0.2552,  -0.1552] 
+	x140: [  2.1019,   2.2019] 
+	x141: [  0.8140,   0.9140] 
+	x142: [ -1.0931,  -0.9931] 
+	x143: [  2.1530,   2.2530] 
+	x144: [  1.5274,   1.6274] 
+	x145: [  1.3228,   1.4228] 
+	x146: [ -4.1909,  -4.0909] 
+	x147: [ -0.7027,  -0.6027] 
+	x148: [ -0.5227,  -0.4227] 
+	x149: [  1.1700,   1.2700] 
+	x150: [  1.8615,   1.9615] 
+	x151: [  0.2585,   0.3585] 
+	x152: [ -0.8195,  -0.7195] 
+	x153: [  1.0062,   1.1062] 
+	x154: [ -1.0940,  -0.9940] 
+	x155: [ -1.0342,  -0.9342] 
+	x156: [  0.4163,   0.5163] 
+	x157: [ -2.1747,  -2.0747] 
+	x158: [  2.5421,   2.6421] 
+	x159: [ -1.8463,  -1.7463] 
+	x160: [ -2.8405,  -2.7405] 
+	x161: [ -1.2638,  -1.1638] 
+	x162: [ -2.4660,  -2.3660] 
+	x163: [ -0.4260,  -0.3260] 
+	x164: [ -1.2402,  -1.1402] 
+	x165: [ -0.1300,  -0.0300] 
+	x166: [ -0.0053,   0.0947] 
+	x167: [  1.8390,   1.9390] 
+	x168: [  1.4446,   1.5446] 
+	x169: [  1.1446,   1.2446] 
+	x170: [ -2.6216,  -2.5216] 
+	x171: [  0.8572,   0.9572] 
+	x172: [  2.0393,   2.1393] 
+	x173: [  0.0270,   0.1270] 
+	x174: [ -1.3311,  -1.2311] 
+	x175: [  0.4248,   0.5248] 
+	x176: [ -1.3244,  -1.2244] 
+	x177: [  1.4355,   1.5355] 
+	x178: [ -1.4598,  -1.3598] 
+	x179: [ -2.0178,  -1.9178] 
+	x180: [ -0.1851,  -0.0851] 
+	x181: [ -2.2826,  -2.1826] 
+	x182: [  1.2393,   1.3393] 
+	x183: [  2.3844,   2.4844] 
+	x184: [ -1.3720,  -1.2720] 
+	x185: [ -1.8393,  -1.7393] 
+	x186: [  1.8770,   1.9770] 
+	x187: [  2.9156,   3.0156] 
+	x188: [  2.7399,   2.8399] 
+	x189: [ -0.6569,  -0.5569] 
+	x190: [  3.5702,   3.6702] 
+	x191: [ -1.0156,  -0.9156] 
+	x192: [  1.2158,   1.3158] 
+	x193: [ -0.2462,  -0.1462] 
+	x194: [ -1.7275,  -1.6275] 
+	x195: [ -2.2938,  -2.1938] 
+	x196: [  1.1785,   1.2785] 
+	x197: [ -0.1683,  -0.0683] 
+	x198: [ -0.0957,   0.0043] 
+	x199: [  0.8453,   0.9453] 
+	x200: [ -1.3811,  -1.2811] 
+	x201: [ -0.3887,  -0.2887] 
+	x202: [ -0.2243,  -0.1243] 
+	x203: [ -2.9857,  -2.8857] 
+	x204: [ -0.0720,   0.0280] 
+	x205: [  0.2159,   0.3159] 
+	x206: [ -1.2150,  -1.1150] 
+	x207: [ -0.0463,   0.0537] 
+	x208: [ -0.1364,  -0.0364] 
+	x209: [ -2.0325,  -1.9325] 
+	x210: [  0.6619,   0.7619] 
+	x211: [ -0.0244,   0.0756] 
+	x212: [ -0.3240,  -0.2240] 
+	x213: [ -3.7511,  -3.6511] 
+	x214: [ -1.4049,  -1.3049] 
+	x215: [  0.8252,   0.9252] 
+	x216: [  0.1729,   0.2729] 
+	x217: [  1.1013,   1.2013] 
+	x218: [ -1.3731,  -1.2731] 
+	x219: [ -0.2045,  -0.1045] 
+	x220: [  1.6415,   1.7415] 
+	x221: [ -0.4105,  -0.3105] 
+	x222: [  0.7344,   0.8344] 
+	x223: [  0.8355,   0.9355] 
+	x224: [ -0.7991,  -0.6991] 
+	x225: [  5.3676,   5.4676] 
+	x226: [ -0.1096,  -0.0096] 
+	x227: [ -0.2541,  -0.1541] 
+	x228: [ -2.6857,  -2.5857] 
+	x229: [  2.4220,   2.5220] 
+	x230: [  0.1584,   0.2584] 
+	x231: [ -1.5812,  -1.4812] 
+	x232: [  2.4169,   2.5169] 
+	x233: [  1.5496,   1.6496] 
+	x234: [ -1.1676,  -1.0676] 
+	x235: [ -0.2843,  -0.1843] 
+	x236: [  1.8235,   1.9235] 
+	x237: [  0.1833,   0.2833] 
+	x238: [  0.4567,   0.5567] 
+	x239: [  2.2697,   2.3697] 
+	x240: [  1.1750,   1.2750] 
+	x241: [ -2.3933,  -2.2933] 
+	x242: [  1.0254,   1.1254] 
+	x243: [  3.0543,   3.1543] 
+	x244: [ -0.0302,   0.0698] 
+	x245: [  1.0043,   1.1043] 
+	x246: [  0.4757,   0.5757] 
+	x247: [ -3.1001,  -3.0001] 
+	x248: [ -0.1860,  -0.0860] 
+	x249: [  0.5446,   0.6446] 
+	x250: [  2.1352,   2.2352] 
+	x251: [  1.5631,   1.6631] 
+	x252: [ -1.8115,  -1.7115] 
+	x253: [  0.9833,   1.0833] 
+	x254: [ -2.7815,  -2.6815] 
+	x255: [ -0.9059,  -0.8059] 
+	x256: [  0.1066,   0.2066] 
+	x257: [  1.6698,   1.7698] 
+	x258: [ -2.8878,  -2.7878] 
+	x259: [ -0.7001,  -0.6001] 
+	x260: [  2.6254,   2.7254] 
+	x261: [ -1.0026,  -0.9026] 
+	x262: [  1.1467,   1.2467] 
+	x263: [  0.3042,   0.4042] 
+	x264: [  3.9321,   4.0321] 
+	x265: [  2.9695,   3.0695] 
+	x266: [  1.2976,   1.3976] 
+	x267: [ -0.4693,  -0.3693] 
+	x268: [ -3.0968,  -2.9968] 
+	x269: [ -0.0970,   0.0030] 
+	x270: [  0.5721,   0.6721] 
+	x271: [ -0.9193,  -0.8193] 
+	x272: [ -0.9953,  -0.8953] 
+	x273: [ -0.7153,  -0.6153] 
+	x274: [  2.2519,   2.3519] 
+	x275: [  0.6597,   0.7597] 
+	x276: [ -0.8945,  -0.7945] 
+	x277: [  0.7458,   0.8458] 
+	x278: [  0.4427,   0.5427] 
+	x279: [  0.7982,   0.8982] 
+	x280: [  0.7643,   0.8643] 
+	x281: [  1.7001,   1.8001] 
+	x282: [ -0.3479,  -0.2479] 
+	x283: [  0.0605,   0.1605] 
+	x284: [ -4.2397,  -4.1397] 
+	x285: [ -1.0124,  -0.9124] 
+	x286: [  2.4067,   2.5067] 
+	x287: [ -1.7038,  -1.6038] 
+	x288: [ -2.6449,  -2.5449] 
+	x289: [  1.9730,   2.0730] 
+	x290: [ -0.1638,  -0.0638] 
+	x291: [ -0.5354,  -0.4354] 
+	x292: [ -0.5597,  -0.4597] 
+	x293: [ -0.1947,  -0.0947] 
+	x294: [  3.0537,   3.1537] 
+	x295: [  0.4458,   0.5458] 
+	x296: [  0.1395,   0.2395] 
+	x297: [ -0.5401,  -0.4401] 
+	x298: [ -4.4201,  -4.3201] 
+	x299: [  1.0734,   1.1734] 
+	x300: [  0.7838,   0.8838] 
+	x301: [  3.6552,   3.7552] 
+	x302: [ -1.2200,  -1.1200] 
+	x303: [  1.9522,   2.0522] 
+	x304: [  0.5484,   0.6484] 
+	x305: [ -0.6787,  -0.5787] 
+	x306: [  1.6012,   1.7012] 
+	x307: [ -0.4256,  -0.3256] 
+	x308: [ -1.6076,  -1.5076] 
+	x309: [  0.2036,   0.3036] 
+	x310: [ -0.9067,  -0.8067] 
+	x311: [ -3.1673,  -3.0673] 
+	x312: [  1.6660,   1.7660] 
+	x313: [ -3.2686,  -3.1686] 
+	x314: [ -1.7988,  -1.6988] 
+	x315: [  0.3175,   0.4175] 
+	x316: [ -2.4325,  -2.3325] 
+	x317: [  1.3631,   1.4631] 
+	x318: [ -1.3415,  -1.2415] 
+	x319: [  2.2742,   2.3742] 
+	x320: [  0.5336,   0.6336] 
+	x321: [ -0.4478,  -0.3478] 
+	x322: [  0.6830,   0.7830] 
+	x323: [  4.1658,   4.2658] 
+	x324: [ -1.2424,  -1.1424] 
+	x325: [ -0.8259,  -0.7259] 
+	x326: [  0.9520,   1.0520] 
+	x327: [  0.7724,   0.8724] 
+	x328: [ -0.7797,  -0.6797] 
+	x329: [  1.4613,   1.5613] 
+	x330: [  0.9950,   1.0950] 
+	x331: [ -1.2357,  -1.1357] 
+	x332: [  2.0495,   2.1495] 
+	x333: [ -0.8665,  -0.7665] 
+	x334: [  0.1551,   0.2551] 
+	x335: [ -1.8804,  -1.7804] 
+	x336: [ -1.3647,  -1.2647] 
+	x337: [  1.7822,   1.8822] 
+	x338: [ -1.1777,  -1.0777] 
+	x339: [ -0.0686,   0.0314] 
+	x340: [ -0.2627,  -0.1627] 
+	x341: [  2.8182,   2.9182] 
+	x342: [ -2.9360,  -2.8360] 
+	x343: [  1.3044,   1.4044] 
+	x344: [  2.1082,   2.2082] 
+	x345: [ -3.0509,  -2.9509] 
+	x346: [  2.0716,   2.1716] 
+	x347: [  1.5888,   1.6888] 
+	x348: [ -3.1610,  -3.0610] 
+	x349: [  1.3974,   1.4974] 
+	x350: [  0.3200,   0.4200] 
+	x351: [ -0.8514,  -0.7514] 
+	x352: [ -1.4842,  -1.3842] 
+	x353: [ -0.0988,   0.0012] 
+	x354: [  1.0894,   1.1894] 
+	x355: [  0.7800,   0.8800] 
+	x356: [  1.9475,   2.0475] 
+	x357: [ -2.5780,  -2.4780] 
+	x358: [ -0.4355,  -0.3355] 
+	x359: [ -2.1989,  -2.0989] 
+	x360: [ -1.4084,  -1.3084] 
+	x361: [  0.4033,   0.5033] 
+	x362: [  0.4747,   0.5747] 
+	x363: [  0.1923,   0.2923] 
+	x364: [  1.0892,   1.1892] 
+	x365: [  0.1474,   0.2474] 
+	x366: [  0.9778,   1.0778] 
+	x367: [  0.4504,   0.5504] 
+	x368: [  1.0727,   1.1727] 
+	x369: [  0.7644,   0.8644] 
+	x370: [ -2.2116,  -2.1116] 
+	x371: [ -2.9359,  -2.8359] 
+	x372: [ -0.4169,  -0.3169] 
+	x373: [  0.9612,   1.0612] 
+	x374: [  0.4930,   0.5930] 
+	x375: [  0.0887,   0.1887] 
+	x376: [ -2.1405,  -2.0405] 
+	x377: [  1.0962,   1.1962] 
+	x378: [  1.2380,   1.3380] 
+	x379: [  2.5708,   2.6708] 
+	x380: [  2.9275,   3.0275] 
+	x381: [ -1.3491,  -1.2491] 
+	x382: [ -0.5180,  -0.4180] 
+	x383: [  0.0934,   0.1934] 
+	x384: [  4.1636,   4.2636] 
+	x385: [ -0.6967,  -0.5967] 
+	x386: [  2.0665,   2.1665] 
+	x387: [ -3.1400,  -3.0400] 
+	x388: [ -3.4990,  -3.3990] 
+	x389: [ -2.9744,  -2.8744] 
+	x390: [  0.7992,   0.8992] 
+	x391: [  2.3214,   2.4214] 
+	x392: [ -1.3443,  -1.2443] 
+	x393: [  1.6879,   1.7879] 
+	x394: [  2.4302,   2.5302] 
+	x395: [  0.5727,   0.6727] 
+	x396: [ -1.6710,  -1.5710] 
+	x397: [  0.3759,   0.4759] 
+	x398: [  0.1575,   0.2575] 
+	x399: [ -0.5366,  -0.4366] 
+	x400: [  0.5549,   0.6549] 
+	x401: [ -2.6163,  -2.5163] 
+	x402: [ -0.3369,  -0.2369] 
+	x403: [  1.7859,   1.8859] 
+	x404: [  2.3912,   2.4912] 
+	x405: [  3.9336,   4.0336] 
+	x406: [  0.3713,   0.4713] 
+	x407: [  2.1452,   2.2452] 
+	x408: [  1.9107,   2.0107] 
+	x409: [ -3.0372,  -2.9372] 
+	x410: [ -2.8716,  -2.7716] 
+	x411: [ -3.9178,  -3.8178] 
+	x412: [  0.2958,   0.3958] 
+	x413: [  0.5302,   0.6302] 
+	x414: [ -0.6764,  -0.5764] 
+	x415: [  0.9084,   1.0084] 
+	x416: [  1.6169,   1.7169] 
+	x417: [ -0.9581,  -0.8581] 
+	x418: [ -0.7743,  -0.6743] 
+	x419: [  1.6404,   1.7404] 
+	x420: [ -2.2490,  -2.1490] 
+	x421: [  1.6203,   1.7203] 
+	x422: [ -1.6935,  -1.5935] 
+	x423: [  2.7825,   2.8825] 
+	x424: [ -0.7965,  -0.6965] 
+	x425: [ -1.3270,  -1.2270] 
+	x426: [  4.4372,   4.5372] 
+	x427: [  3.0775,   3.1775] 
+	x428: [ -1.9907,  -1.8907] 
+	x429: [  0.5263,   0.6263] 
+	x430: [ -2.4884,  -2.3884] 
+	x431: [  1.2757,   1.3757] 
+	x432: [ -3.9229,  -3.8229] 
+	x433: [ -3.1519,  -3.0519] 
+	x434: [ -2.3809,  -2.2809] 
+	x435: [ -1.0762,  -0.9762] 
+	x436: [  0.7548,   0.8548] 
+	x437: [  1.3153,   1.4153] 
+	x438: [  2.6468,   2.7468] 
+	x439: [ -0.8162,  -0.7162] 
+	x440: [ -2.0886,  -1.9886] 
+	x441: [  0.5749,   0.6749] 
+	x442: [ -0.5888,  -0.4888] 
+	x443: [ -2.1090,  -2.0090] 
+	x444: [ -4.1026,  -4.0026] 
+	x445: [ -1.3201,  -1.2201] 
+	x446: [ -1.5455,  -1.4455] 
+	x447: [ -0.4275,  -0.3275] 
+	x448: [ -2.3494,  -2.2494] 
+	x449: [  0.2980,   0.3980] 
+	x450: [  0.2623,   0.3623] 
+	x451: [  2.2588,   2.3588] 
+	x452: [ -0.6642,  -0.5642] 
+	x453: [ -0.6258,  -0.5258] 
+	x454: [  1.6403,   1.7403] 
+	x455: [ -1.0862,  -0.9862] 
+	x456: [ -2.5608,  -2.4608] 
+	x457: [  0.4838,   0.5838] 
+	x458: [ -2.4357,  -2.3357] 
+	x459: [ -1.6824,  -1.5824] 
+	x460: [ -0.1283,  -0.0283] 
+	x461: [  1.5606,   1.6606] 
+	x462: [  0.4032,   0.5032] 
+	x463: [ -0.2906,  -0.1906] 
+	x464: [  0.4367,   0.5367] 
+	x465: [  1.1938,   1.2938] 
+	x466: [  1.4383,   1.5383] 
+	x467: [  0.5455,   0.6455] 
+	x468: [  0.6445,   0.7445] 
+	x469: [ -0.7135,  -0.6135] 
+	x470: [  2.1607,   2.2607] 
+	x471: [ -0.9450,  -0.8450] 
+	x472: [ -2.7988,  -2.6988] 
+	x473: [  0.6515,   0.7515] 
+	x474: [  1.9370,   2.0370] 
+	x475: [  0.3743,   0.4743] 
+	x476: [ -1.7260,  -1.6260] 
+	x477: [  0.0685,   0.1685] 
+	x478: [ -2.1044,  -2.0044] 
+	x479: [ -0.3017,  -0.2017] 
+	x480: [  0.9939,   1.0939] 
+	x481: [ -0.5884,  -0.4884] 
+	x482: [ -0.9327,  -0.8327] 
+	x483: [ -2.4844,  -2.3844] 
+	x484: [ -0.3812,  -0.2812] 
+	x485: [  1.8107,   1.9107] 
+	x486: [ -1.7228,  -1.6228] 
+	x487: [  0.9579,   1.0579] 
+	x488: [ -2.4505,  -2.3505] 
+	x489: [  0.3932,   0.4932] 
+	x490: [ -0.1708,  -0.0708] 
+	x491: [  1.5515,   1.6515] 
+	x492: [ -0.0858,   0.0142] 
+	x493: [  0.5270,   0.6270] 
+	x494: [  0.9405,   1.0405] 
+	x495: [  0.3950,   0.4950] 
+	x496: [  2.5647,   2.6647] 
+	x497: [ -0.2107,  -0.1107] 
+	x498: [ -0.1096,  -0.0096] 
+	x499: [ -0.0664,   0.0336] 
+	x500: [ -1.8199,  -1.7199] 
+	x501: [  1.1276,   1.2276] 
+	x502: [  0.6646,   0.7646] 
+	x503: [ -4.0607,  -3.9607] 
+	x504: [  0.1110,   0.2110] 
+	x505: [ -1.5002,  -1.4002] 
+	x506: [  1.6188,   1.7188] 
+	x507: [ -2.0993,  -1.9993] 
+	x508: [ -1.5047,  -1.4047] 
+	x509: [ -0.9197,  -0.8197] 
+	x510: [ -3.2896,  -3.1896] 
+	x511: [ -0.1619,  -0.0619] 
+
+Branching heuristics set to PseudoImpact
+
+Engine::solve: Initial statistics
+
+19:58:37 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 1894 milli (00:00:01)
+		Main loop: 0 milli (00:00:00)
+		Preprocessing time: 882 milli (00:00:00)
+		Unknown: 1011 milli (00:00:01)
+	Breakdown for main loop:
+		[0.00%] Simplex steps: 0 milli
+		[0.00%] Explicit-basis bound tightening: 0 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.00%] Degradation checking: 0 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.00%] Statistics handling: 0 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 0 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 0 milli
+		[0.00%] SMT core: 0 milli
+		[0.00%] Symbolic Bound Tightening: 54 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 180
+	Number of constraints removed due to variable elimination: 180
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 1
+		0 iterations were simplex steps. Total time: 0 milli. Average: 0.00 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 76 / 76
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 0
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000000000. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 0
+		Real pivots: 0. Degenerate: 0 (0.00%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.00 milli
+	Total number of fake pivots performed: 0
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 766, N = 2120
+	--- SMT Core Statistics ---
+	Total depth is 0. Total visited states: 1. Number of splits: 0. Number of pops: 0
+	Max stack depth: 0
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 0.
+		Number of rows examined by row tightener: 0. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 0. Consequent tightenings: 0
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 456. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 2
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 0.
+	Number of resets to reference space: 1. Avg. iterations per reset: 0
+	--- SBT ---
+	Number of tightened bounds: 387
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 0. Number of accepted update: 0 [0.00%]
+	Total time (% of local search time) updating SoI phase pattern : 0 milli [0.00%]
+	Total time obtaining current assignment: 0 milli [0.00%]
+	Total time getting SoI phase pattern : 0 milli [0.00%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 0 / 0
+		[0.00%] Pre-Push hook: 0 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.00%] Total context-switching time: 0 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+---
+
+20:01:17 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 161672 milli (00:02:41)
+		Main loop: 151536 milli (00:02:31)
+		Preprocessing time: 882 milli (00:00:00)
+		Unknown: 9253 milli (00:00:09)
+	Breakdown for main loop:
+		[100.27%] Simplex steps: 151945 milli
+		[3.29%] Explicit-basis bound tightening: 4982 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.69%] Degradation checking: 1038 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.22%] Statistics handling: 328 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 1 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 3 milli
+		[0.02%] SMT core: 27 milli
+		[0.62%] Symbolic Bound Tightening: 938 milli
+		[69.26%] SoI-based local search: 104955 milli
+		[0.00%] SoI-based local search: 0 milli
+		[12173155173357.07%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 180
+	Number of constraints removed due to variable elimination: 180
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 10000
+		9949 iterations were simplex steps. Total time: 151945 milli. Average: 15.27 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 52 / 76
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 24
+	Last reported degradation: 0.0000015842. Max degradation so far: 0.0000354781. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 9568
+		Real pivots: 9568. Degenerate: 0 (0.00%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 2.16 milli
+	Total number of fake pivots performed: 187
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 766, N = 2120
+	--- SMT Core Statistics ---
+	Total depth is 24. Total visited states: 25. Number of splits: 24. Number of pops: 0
+	Max stack depth: 24
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 4622.
+		Number of rows examined by row tightener: 9568. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 3. Consequent tightenings: 374
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 960. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 88
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 9755.
+	Number of resets to reference space: 13. Avg. iterations per reset: 750
+	--- SBT ---
+	Number of tightened bounds: 5009
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 74. Number of accepted update: 50 [67.57%]
+	Total time (% of local search time) updating SoI phase pattern : 80811 milli [0.08%]
+	Total time obtaining current assignment: 94980 milli [0.09%]
+	Total time getting SoI phase pattern : 7999 milli [0.01%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 24 / 0
+		[0.01%] Pre-Push hook: 19 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.01%] Total context-switching time: 19 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+
+
+Engine: quitting due to timeout...
+
+Final statistics:
+
+20:03:38 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 303132 milli (00:05:03)
+		Main loop: 301237 milli (00:05:01)
+		Preprocessing time: 882 milli (00:00:00)
+		Unknown: 1012 milli (00:00:01)
+	Breakdown for main loop:
+		[91.18%] Simplex steps: 274672 milli
+		[6.74%] Explicit-basis bound tightening: 20304 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.58%] Degradation checking: 1742 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.20%] Statistics handling: 615 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 4 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 8 milli
+		[0.08%] SMT core: 235 milli
+		[0.76%] Symbolic Bound Tightening: 2285 milli
+		[65.62%] SoI-based local search: 197669 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.45%] Unaccounted for: 1369 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 3
+	Number of eliminated variables: 180
+	Number of constraints removed due to variable elimination: 180
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 18063
+		17938 iterations were simplex steps. Total time: 274672 milli. Average: 15.31 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 43 / 76
+		Constraints disabled by valid splits: 0. By SMT-originated splits: 33
+	Last reported degradation: 0.0000015842. Max degradation so far: 0.0005489056. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 16374
+		Real pivots: 16364. Degenerate: 10 (0.06%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 2.17 milli
+	Total number of fake pivots performed: 902
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 766, N = 2120
+	--- SMT Core Statistics ---
+	Total depth is 33. Total visited states: 75. Number of splits: 53. Number of pops: 21
+	Max stack depth: 40
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 15733.
+		Number of rows examined by row tightener: 16374. Consequent tightenings: 98
+		Number of explicit basis matrices examined by row tightener: 10. Consequent tightenings: 464
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 1343. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 145
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 17276.
+	Number of resets to reference space: 40. Avg. iterations per reset: 431
+	--- SBT ---
+	Number of tightened bounds: 16120
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 277. Number of accepted update: 223 [80.51%]
+	Total time (% of local search time) updating SoI phase pattern : 144893 milli [0.07%]
+	Total time obtaining current assignment: 540043 milli [0.27%]
+	Total time getting SoI phase pattern : 21258 milli [0.01%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 74 / 41
+		[0.01%] Pre-Push hook: 39 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 10 milli
+		[0.01%] Pop : 20 milli
+		[0.02%] Total context-switching time: 70 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+Timeout
